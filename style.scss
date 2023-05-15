@@ -1,3 +1,15 @@
+$base-color: #0a946a;
+$primary: rgba(3, 117, 89, 0.801);
+$white: rgb(243, 243, 243);
+$span: rgb(0, 54, 0);
+
+:root {
+    --primary: #{$primary};
+    --base-color: #{$base-color};
+    --white: #{$white};
+    --span-color: #{$span};
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -25,7 +37,7 @@
         font-weight: bolder; 
 
         a {
-            color: green;
+            color: var(--base-color);
             text-decoration: none;
         }
 
@@ -42,7 +54,8 @@
             left: -100%;
             top: 3rem;
             flex-direction: column;
-            // background-color: aqua;
+            color: var(--base-color);
+            background-color: white;
             width: 90%;
             border-radius: 10px;
             text-align: center;
@@ -85,7 +98,7 @@
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease;
-    background-color: green;
+    background-color: var(--base-color);
 }
 
 .hamburger.active .bar:nth-child(2){
@@ -147,28 +160,31 @@
         height: 18rem; 
         display: flex;
         justify-content: space-between;
+        height: 30vh;
     }
 
     .hero_text_container {
-        height: 30vh;
+        background-color: var(--primary);
+        min-height: 30vh;
 
-        @media screen and (min-width:767px) {
+        @media screen and (min-width:465px) {
             width:50%;
             padding: 30px;
+            min-height: 17rem;
         }
 
         h1 {
-            color: green;
+            color: var(--white);
             font-size: 2rem;
             padding: 5px;
 
             span {
-                color: rgb(0, 54, 0);
+                color: var(--span-color);
             }
         }
 
         h3 {
-            color: green;
+            color: var(--span-color);
             font-size: 1.5rem;
             padding: 5px;
         }
@@ -199,21 +215,22 @@
 }
 
 .service-container {
-    border: 1px solid blue;
     display: flex;
     height: 40vh;
     justify-content: space-around;
     align-items: center;
-    background: green;
-    color: white;
+    background: var(--primary);
+    color: black;
+    font-weight: 600;
 
     h3 {
-        color: black;
+        color: white;
     }
 
     .service_dev_container {
         .service_offer {
             padding: 5px;
+            font-size: 1.2rem;
 
             ul {
                 li {
@@ -230,7 +247,6 @@
 
         .working_process {
             padding: 5px;
-            text-align: center;
             
             ul {
                 li {
@@ -239,10 +255,11 @@
                 }
 
                 div {
+                    text-align: center;
                     margin: 3px;
-                    border: 1px solid;
+                    border: 1px solid black;
+                    height: 2rem;
                     width: 1px;
-                    min-height: 2em;
                     color: black;
                 }
             }
@@ -253,21 +270,38 @@
 }
 
 .about-container {
-    border: 1px solid orange;
-    text-align: center;
+    // text-align: center;
     
     .about_header_text {
         float: right;
     }
 
     .about_me_container {
-        margin-top: 20px;
+        margin-top: 30px;
         display: flex;
         justify-content: space-between;
+        gap: 5px;
+        padding: 5px;
+        width: 100%;
+
+
+        .profile_img_container {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 7rem;
+                max-height: 7rem;
+                border-radius: 50%;
+            }
+        }
 
         .about_me_text {
-            width: 50%;
+            width: 70%;
             padding: 10px;
+
 
             button {
                 margin-top: 10px;
@@ -282,52 +316,139 @@
 
     .skills_container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 30px;
-        background: green;
+        background: var(--primary);
+        padding: 5px;
+
+        h4 {
+            color: white;
+        }
 
         div {
+            margin-top: 10px;
             ul {
             list-style-type: none;
             }
+        }
+
+        .soft_skills_container {
+            width: 30%;
         }
     }
 }
 
 .portfolio-container {
-    border: 1px solid purple;
-    height: 30vh;
+    min-height: 30vh;
+    padding: 5px;
 
 
     .portfolio_projects {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        @media screen and (min-width:766px){
+            grid-template-columns: auto auto auto auto;
+        }
+    }
+
+    .card {
         display: flex;
+        flex-direction: column;
+        margin: 5px;
+        justify-content: center;
+        padding: 5px;
+
+        .card-img-top {
+            max-height: 50px;
+            max-width: 100%;
+        }
+
+        .btn-primary {
+            display: flex;
+            padding: 2px;
+            margin: 3px;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+
+            @media screen and (min-width:767px){
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .btn {
+                background-color: green;
+                text-decoration: none;
+            }
+        }
     }
 }
 
 .contact_footer_section {
-    border: 1px solid black;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    background: green;
+    align-items: center;
+    background: var(--primary);
+    text-align: center;
+
+    @media screen and (min-width: 465px) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
     .message_me_container {
-        padding: 10px;
+        padding: 5px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
 
-        @media screen and (max-width:767px) {
+        @media screen and (min-width:767px) {
             width: 40%;
         }
 
         form {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
             
 
-            div {
+            .input_form {
                 display:block;
+
+                input {
+                    margin: 2px;
+                    min-height: 1.5rem;
+                    padding: 3px;
+                }
 
                 @media screen and (min-width:767px){
                     display: flex;
                     justify-content: center;
+                }
+            }
+
+            .input_block {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                textarea {
+                    padding: 3px;
+                    min-height: 5rem;
+                    min-width: 11rem;
+
+                    @media screen and (min-width:425px) {
+                        min-width: 15rem;
+                    }
+                }
+
+                input {
+                    margin: 3px;
                 }
             }
         }

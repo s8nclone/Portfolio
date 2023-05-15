@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.top-nav {
+  border: 1px solid green;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  background: white;
+  float: left;
+}
+@media screen and (min-width: 425px) {
+  .top-nav {
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.top-nav .nav_home_btn {
+  width: 30%;
+  border: 1px solid orchid;
+}
+.top-nav .nav_home_btn span {
+  font-size: 30px;
+  font-style: italic;
+}
+.top-nav .nav_link_btn {
+  width: 40%;
+  text-align: center;
+  border: 1px solid orangered;
+}
+.top-nav .nav_link_btn ul li {
+  font-size: 20px;
+  display: inline;
+  margin: 0px 35px;
+}
+.top-nav .hamburger {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  z-index: 10;
+  cursor: pointer;
+}
+.top-nav .burger {
+  width: 4rem;
+  height: 0.35rem;
+  border-radius: 10px;
+  background-color: black;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+  margin: 1px 0px;
+}
+.top-nav .hamburgers {
+  display: none;
+}
+@media (max-width: 767px) {
+  .top-nav .hamburgers {
+    float: right;
+    display: flex;
+    padding-top: 5px;
+    margin-right: 5px;
+    z-index: 50;
+  }
+  .top-nav .hamburgers .navigation {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    height: 27vh;
+    width: 50vw;
+    margin-top: 40px;
+    padding: 10px;
+  }
+}
+
+.hero-header {
+  border: 1px solid brown;
+  gap: 5px;
+  align-items: center;
+}
+@media screen and (min-width: 465px) {
+  .hero-header {
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 767px) {
+  .hero-header .hero_text_container {
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+  }
+}
+.hero-header .hero_text_container input {
+  margin-top: 10px;
+}
+
+.service-container {
+  border: 1px solid blue;
+  display: flex;
+  height: 30vh;
+  justify-content: space-around;
+  align-items: center;
+  background: green;
+}
+.service-container ul li {
+  list-style-type: none;
+}
+.service-container ul div {
+  border: 1px dashed black;
+  width: 0px;
+  height: 20px;
+  margin-left: 25%;
+}
+
+.about-container {
+  border: 1px solid orange;
+  text-align: center;
+}
+.about-container .about_header_text {
+  float: right;
+}
+.about-container .about_me_container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-container .about_me_container .about_me_text {
+  width: 50%;
+  padding: 10px;
+}
+.about-container .about_me_container .about_me_text button {
+  margin-top: 10px;
+  float: right;
+}
+.about-container .skill_header_text {
+  float: left;
+}
+.about-container .skills_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  background: green;
+}
+.about-container .skills_container div ul {
+  list-style-type: none;
+}
+
+.portfolio-container {
+  border: 1px solid purple;
+  height: 30vh;
+}
+.portfolio-container .portfolio_projects {
+  display: flex;
+}
+
+.contact_footer_section {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  background: green;
+}
+.contact_footer_section .message_me_container {
+  padding: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .contact_footer_section .message_me_container {
+    width: 40%;
+  }
+}
+.contact_footer_section .message_me_container form {
+  display: block;
+}
+.contact_footer_section .message_me_container form div {
+  display: block;
+}
+@media screen and (min-width: 767px) {
+  .contact_footer_section .message_me_container form div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

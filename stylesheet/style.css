@@ -27,6 +27,7 @@
 .top-nav .nav_home_btn {
   font-size: 1.5rem;
   font-weight: bolder;
+  min-width: 30%;
 }
 .top-nav .nav_home_btn a {
   color: var(--base-color);
@@ -42,7 +43,6 @@
   top: 3rem;
   flex-direction: column;
   color: var(--base-color);
-  background-color: white;
   width: 90%;
   border-radius: 10px;
   text-align: center;
@@ -57,7 +57,7 @@
 .top-nav .nav_link_btn .nav_menu li .nav_link {
   transition: 0.3s ease-out;
   text-decoration: none;
-  color: black;
+  color: var(--primary);
 }
 .top-nav .nav_link_btn .nav_menu li .nav_link:hover {
   color: green;
@@ -99,12 +99,14 @@
     display: none;
   }
   .container {
-    position: sticky;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+  }
+  .nav_home_btn {
+    width: 30px;
   }
   .nav_link_btn {
     width: 70%;
@@ -132,18 +134,23 @@
     height: 18rem;
     display: flex;
     justify-content: space-between;
-    height: 30vh;
+    max-height: 40vh;
   }
 }
 .hero-header .hero_text_container {
   background-color: var(--primary);
   min-height: 30vh;
 }
-@media screen and (min-width: 465px) {
+@media screen and (min-width: 767px) {
   .hero-header .hero_text_container {
     width: 50%;
     padding: 30px;
-    min-height: 17rem;
+    min-height: 13rem;
+  }
+}
+@media screen and (min-width: 465px) {
+  .hero-header .hero_text_container {
+    min-height: 10rem;
   }
 }
 .hero-header .hero_text_container h1 {
@@ -155,7 +162,7 @@
   color: var(--span-color);
 }
 .hero-header .hero_text_container h3 {
-  color: var(--span-color);
+  color: var(--white);
   font-size: 1.5rem;
   padding: 5px;
 }
@@ -177,7 +184,6 @@
 @media screen and (min-width: 767px) {
   .hero-header .hero_img_container {
     width: 60%;
-    height: 50vh;
   }
 }
 
@@ -186,12 +192,12 @@
   height: 40vh;
   justify-content: space-around;
   align-items: center;
-  background: var(--primary);
+  background: white;
   color: black;
   font-weight: 600;
 }
 .service-container h3 {
-  color: white;
+  color: var(--base-color);
 }
 .service-container .service_dev_container .service_offer {
   padding: 5px;
@@ -221,6 +227,7 @@
 
 .about-container .about_header_text {
   float: right;
+  color: var(--primary);
 }
 .about-container .about_me_container {
   margin-top: 30px;
@@ -229,38 +236,74 @@
   gap: 5px;
   padding: 5px;
   width: 100%;
+  min-height: 35vh;
+  background: var(--primary);
+}
+@media screen and (min-width: 465px) {
+  .about-container .about_me_container {
+    height: 20vh;
+  }
 }
 .about-container .about_me_container .profile_img_container {
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 3;
+  background: var(--white);
+  border-radius: 50%;
+  margin: 0.8rem;
+  height: 8rem;
 }
 .about-container .about_me_container .profile_img_container img {
   max-width: 7rem;
   max-height: 7rem;
   border-radius: 50%;
 }
+@media screen and (min-width: 767px) {
+  .about-container .about_me_container .profile_img_container img {
+    max-height: 10rem;
+    max-width: 10rem;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .about-container .about_me_container .profile_img_container {
+    min-height: 11rem;
+    border-radius: 10px;
+  }
+}
 .about-container .about_me_container .about_me_text {
-  width: 70%;
+  width: 100%;
   padding: 10px;
+}
+@media screen and (min-width: 767px) {
+  .about-container .about_me_container .about_me_text {
+    padding: 30px;
+  }
 }
 .about-container .about_me_container .about_me_text button {
   margin-top: 10px;
   float: right;
+  margin-top: 5px;
+}
+@media screen and (max-width: 465px) {
+  .about-container .about_me_container .about_me_text button {
+    margin-top: 20px;
+  }
 }
 .about-container .skill_header_text {
   float: left;
+  color: var(--primary);
 }
 .about-container .skills_container {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
-  background: var(--primary);
   padding: 5px;
 }
 .about-container .skills_container h4 {
-  color: white;
+  color: var(--base-color);
 }
 .about-container .skills_container div {
   margin-top: 10px;
@@ -276,9 +319,13 @@
   min-height: 30vh;
   padding: 5px;
 }
+.portfolio-container h3 {
+  color: var(--primary);
+}
 .portfolio-container .portfolio_projects {
   display: grid;
   grid-template-columns: auto auto;
+  min-height: 12rem;
 }
 @media screen and (min-width: 766px) {
   .portfolio-container .portfolio_projects {
@@ -291,6 +338,8 @@
   margin: 5px;
   justify-content: center;
   padding: 5px;
+  background: var(--primary);
+  color: var(--white);
 }
 .portfolio-container .card .card-img-top {
   max-height: 50px;
@@ -311,8 +360,10 @@
   }
 }
 .portfolio-container .card .btn-primary .btn {
-  background-color: green;
+  background-color: var(--white);
   text-decoration: none;
+  color: var(--base-color);
+  padding: 5px;
 }
 
 .contact_footer_section {

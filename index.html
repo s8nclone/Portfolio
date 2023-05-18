@@ -6,23 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         <title>My Portfolio</title>
+        
+        <link href="https://fonts.cdnfonts.com/css/etweego" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/summer-party" rel="stylesheet">
 
         <link rel="stylesheet" href="stylesheet/style.css" />
+                
+                
     </head>
     <body>
+        <!-- ===== header starts ===== -->
         <header>
-            <div class="container">
+            <div class="container" >
                 <nav class="top-nav">
                     <div class="nav_home_btn">
-                        <a href="#"><span>A</span>bdulmuiz <span>F</span>arayola</a>
+                        <a href="#home"><span>A</span>bdulmuiz <span>F</span>arayola</a>
                     </div>
                     <div class="nav_link_btn">
                         <ul class="nav_menu">
-                            <li><a href="#" class="nav_link">About</a></li>
-                            <li><a href="#" class="nav_link">Portfolio</a></li>
-                            <li><a href="#" class="nav_link">Contact</a></li>
+                            <li><a href="#about" class="nav_link">About</a></li>
+                            <li><a href="#portfolio" class="nav_link">Portfolio</a></li>
+                            <li><a href="#contact" class="nav_link">Contact</a></li>
 
-                            <button class="nav_mode_btn">btn</button>
+                            <button class="nav_mode_btn"><img src="/images/icons8-settings.svg"/></button>
                         </ul>
                     </div>
 
@@ -35,11 +41,13 @@
                 </nav>
             </div>
         </header>
+        <!-- ===== header ends ===== -->
         
-        <section>
+        <!-- ===== hero section starts ===== -->
+        <section id="home">
             <div class="hero-header">
                 <div class="hero_text_container">
-                    <h1>Howdy, you can call me <span>Dayo!</span></h1>
+                    <h1>Howdy 👋, you can call me <span>Dayo!</span></h1>
                     <h3>I develop responsive frontend web apps. </h3>
                     <input type="button" value="Hire me!"/>
                 </div>
@@ -49,6 +57,10 @@
             </div>
             
         </section>
+        <!-- ===== hero section ends ===== -->
+
+        
+        <!-- ===== process and services section starts ===== -->
         <section>
             <div class="service-container">
                 <div class="service_dev_container">
@@ -66,21 +78,23 @@
                     <h3>Working Process</h3>
                     <div class="working_process">
                         <ul>
-                            <li>Discover</li>
-                            <div></div>
-                            <li>Define</li>
-                            <div></div>
-                            <li>Develop</li>
-                            <div></div>
-                            <li>Deliver</li>
+                            <div>Discover</div><hr>
+                            <div>Define</div><hr>
+                            <div>Develop</div><hr>
+                            <div>Deliver</di>
                         </ul>
                     </div>
                 </div>
             </div>
             
         </section>
-        <section>
-            <div class="about-container">
+        <!-- ===== process and services ends ===== -->
+
+        
+        <!-- ===== about me section starts ===== -->
+        <section id="about">
+            <div class="about-container" >
+                <hr style="float:left; margin-top:1rem">
                 <h3 class="about_header_text">About Me</h3>
                 <div class="about_me_container">
                     <div class="profile_img_container">
@@ -91,48 +105,55 @@
                             Eaque adipisci, velit possimus quidem beatae quibusdam praesentium in nemo,
                             cupiditate soluta totam quasi assumenda consectetur quae. Voluptatem ut fugiat alias eveniet?
                         </p>
-                        <button>Download CV</button>
+                        <a href="/document/Farayola Muiz CV.pdf" download="Farayola's CV"><button>Download CV</button></a>
+                        
                     </div>
                 </div>
+                <hr style="float:right; margin-top:1rem; height: .1rem;">
                 <h3 class="skill_header_text">Skills</h3>
                 <div class="skills_container">
                     
-                    <div class="dev_skils_container">
-                        <h4>Hard Skills</h4>
-                        <div class="dev_other_skills">
-                            <ul>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>Javascript</li>
-                                <li>React</li>
-                                <li>Tailwind</li>
-                                <li>SASS</li>
+                    <div class="dev_skills_container">
+                        <div class="dev_skills">
+                            <h4 class="skills_header">FrontEnd Skills</h4>
+                            <ul class="dev_skills_icons">
+                                <li><img class="dev_icon" src="images/icons8-html5.svg" alt="html icon"/></li>
+                                <li><img class="dev_icon" src="images/icons8-css3.svg" alt="css3 icon"/></li>
+                                <li><img class="dev_icon" src="images/icons8-javascript.svg" alt="javascript icon"/></li>
+                                <li><img class="dev_icon" src="images/icons8-react.svg" alt="reactjs icon"/></li>
+                                <li><img class="dev_icon" src="images/icons8-tailwindcss.svg" alt="tailwindcss icon"/></li>
+                                <li><img class="dev_icon" src="images/icons8-sass.svg" alt="sass icon"/></li>
                             </ul>
-                            <h4>Other Familiar Technologies </h4>
-                            <div>
-                                <ul>
-                                    <li>Git</li>
-                                    <li>Postman</li>
-                                    <li>Django</li>
-                                    <li>Python</li>
-                                    <li>Bootstrap</li>
-                                    <li>PostgreSQL</li>
-                                    <li>TypeScript</li>
-                                    <li>Microsoft Tools</li>
-                                </ul>
-                            </div>
+                        </div>
+                        
+                        
+                        <div class="dev_other_skills">
+                            <h4 class="skills_header">Other Familiar Technologies </h4>
+                            <ul class="other_skills_icons">
+                                <li><img class="skills_icon" src="images/icons8-git.svg" alt="git icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-postman.png" alt="postman icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-django.svg" alt="django icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-python.svg" alt="python icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-bootstrap.svg" alt="bootstrap icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-postgresql.svg" alt="postgresql icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-typescript-36.png" alt="typescript icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-office-365.svg" alt="office365 icon"/></li>
+                            </ul>
                         </div>
 
                     </div>
                     <div class="soft_skill_container">
                         <h4>Soft skills</h4>
-                        <div>
+                        <div class="soft_skills_list">
                             <ul>
                                 <li>Commuication</li>
-                                <li>Teamwork</li>
+                                <li>Team Player</li>
                                 <li>Problem solving</li>
                                 <li>Critical Thinker</li>
-                                <li></li>
+                                <li>Highly Organized</li>
+                                <li>Time Efficient</li>
+                                <li>Proactive</li>
+                                <li>Leadership</li>
                             </ul>
                         </div>
                     </div>
@@ -140,8 +161,13 @@
             </div>
             
         </section>
-        <section>
+        <!-- ===== about me ends ===== -->
+
+        
+        <!-- ===== portfolio section starts ===== -->
+        <section id="portfolio">
             <div class="portfolio-container">
+                <hr style="float:right; margin-top:2.2rem;">
                 <h3>Portfolio</h3>
                 <div class="portfolio_projects">
                     <div class="card">
@@ -150,8 +176,8 @@
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           <div class="btn-primary">
-                            <a href="#" class="btn">Preview</a>
-                            <a href="#" class="btn">Go to Repo</a>
+                            <a target="_blank" href="#" class="btn">view live</a>
+                            <a target="_blank" href="#" class="btn"><img class="btn_img" src="images/icons8-github.svg"/></a>
                         </div>
                         </div>
                     </div>
@@ -161,8 +187,8 @@
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <div class="btn-primary">
-                                <a href="#" class="btn">Preview</a>
-                                <a href="#" class="btn">Go to Repo</a>
+                                <a target="_blank" href="#" class="btn">view live</a>
+                                <a target="_blank" href="#" class="btn"><img class="btn_img" src="images/icons8-github.svg"/></a>
                             </div>
                             
                         </div>
@@ -173,62 +199,68 @@
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <div class="btn-primary">
-                                <a href="#" class="btn">Preview</a>
-                                <a href="#" class="btn">Go to Repo</a>
+                                <a target="_blank" href="#" class="btn">view live</a>
+                                <a target="_blank" href="#" class="btn"><img class="btn_img" src="images/icons8-github.svg"/></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer>
+        <!-- ===== portfolio section ends ===== -->
+
+        
+        <!-- ===== contact section starts ===== -->
+        <footer id="contact">
+            <hr style="width:90%; margin-top:2rem;">
             <div class="contact_footer_section">
                 <div class="social_connect_container">
-                    <h3>Let's Connect</h3>
-                    <div>
-                        <ul>
-                            <li>Phone</li>
-                            <li>Email</li>
-                            <li>Address</li>
-                        </ul>
+                    <h3>Connect with me</h3>
+                    <div class="social_connect_icons">
+                        <div class="contact_icons">
+                            <h4>Hit me up!</h4>
+                            <ul>
+                                <div><img src="/images/icons8-phone-100.png" alt="phone icon"/><a href="tel:+2349036454103">+23409036454103</a></div>
+                                <div><img src="/images/icons8-email-100.png" alt="email icon"/><a href="mailto:farayolajunior20@mail.com">@farayolajunior20@mail.com</a></div>
+                                <div><img src="/images/icons8-address-100.png" alt="location icon"/><a>FCT, Abuja. Nigeria.</a></div>
+                            </ul>
+                        </div>
+                        <div class="social_icons">
+                            <h4>Find me on Social media</h4>
+                            <ul>
+                                <li><a target="_blank" href="https://www.instagram.com/dayyyo.3"><img src="/images/icons8-ig (1).svg" alt="instagram icon"/></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/abdulmuiz-farayola-8a8484224/"><img src="/images/icons8-linkedin-img.png" alt="linkedin icon"/></a></li>
+                                <li><a target="_blank" href="https://github.com/s8nclone"><img src="/images/icons8-github (3).svg" alt="github icon"/></a></li>
+                                <li><a target="_blank" href="https://twitter.com/middles8n"><img src="/images/icons8-twitter-squared-100.png" alt="twitter icon"/></a></li>
+                                <li><a target="_blank"><img src="/images/icons8-behance.png" alt="behance icon"/></a></li>
+                            </ul>
+                        </div>
+                        
 
-                        <ul>
-                            <li>ig</li>
-                            <li>linkedin</li>
-                            <li>github</li>
-                            <li>Twitter</li>
-                            <li>behance</li>
-                        </ul>
+                        
                     </div>
                     
                 </div>
                 <div class="message_me_container">
-                    <h4>You can send me a message</h4>
+                    <h3>Have a project or freelance idea? I'm excited to hear about it!</h3>
                     <form>
                         <div class="input_form">
                             <input type="text" placeholder="Name"/>
                             <input type="email" placeholder="s8n@mail.com"/> 
-                        </div>
-                        <div class="input_block">
-                            <textarea placeholder="say hi!"></textarea>
-                            <input type="submit"/>
+                            <input type="text" placeholder="subject"/>
+                        
+                            <textarea placeholder="tell me more!"></textarea>
+                            <input class="submit_btn" type="submit"/>
                         </div>
                         
                     </form>
                 </div>
             </div>
+            <p class="footer_text">Abdulmuiz Farayola @2023</p>
             
         </footer>
 
         <script>
-            // function myFunction() {
-            //     var x = document.getElementById("myLinks");
-            //     if (x.style.display === "block") {
-            //         x.style.display = "none";
-            //     } else {
-            //         x.style.display = "block";
-            //     }
-            // }
 
             const hamburger = document.querySelector(".hamburger");
             const navMenu = document.querySelector(".nav_menu");

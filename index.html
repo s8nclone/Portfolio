@@ -5,19 +5,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <title>My Portfolio</title>
+        <title>Muiz's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="images/faveicon.png" />
+        <!-- <link rel="icon" type="image/x-icon" href="images/Untitledfave.png" /> -->
+        
         
         <link href="https://fonts.cdnfonts.com/css/etweego" rel="stylesheet">
         <link href="https://fonts.cdnfonts.com/css/summer-party" rel="stylesheet">
 
         <link rel="stylesheet" href="stylesheet/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
                 
                 
     </head>
     <body>
         <!-- ===== header starts ===== -->
         <header>
-            <div class="container" >
+            <div class="container" data-aos="fade-down">
                 <nav class="top-nav">
                     <div class="nav_home_btn">
                         <a href="#home"><span>A</span>bdulmuiz <span>F</span>arayola</a>
@@ -28,7 +32,7 @@
                             <li><a href="#portfolio" class="nav_link">Portfolio</a></li>
                             <li><a href="#contact" class="nav_link">Contact</a></li>
 
-                            <button class="nav_mode_btn"><img src="/images/icons8-settings.svg"/></button>
+                            <button class="nav_mode_btn" id="dark-mode-btn"><img src="/images/icons8-settings.svg"/></button>
                         </ul>
                     </div>
 
@@ -45,13 +49,13 @@
         
         <!-- ===== hero section starts ===== -->
         <section id="home">
-            <div class="hero-header">
-                <div class="hero_text_container">
+            <div class="hero-header" >
+                <div class="hero_text_container" data-aos="fade-right" data-aos-duration="1000">
                     <h1>Howdy 👋, you can call me <span>Dayo!</span></h1>
                     <h3>I develop responsive frontend web apps. </h3>
                     <input type="button" value="Hire me!"/>
                 </div>
-                <div class="hero_img_container">
+                <div class="hero_img_container" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="1000">
                     <img src="images/hero-dev-img.png" alt="hero image of developer"/>
                 </div>
             </div>
@@ -93,12 +97,12 @@
         
         <!-- ===== about me section starts ===== -->
         <section id="about">
-            <div class="about-container" >
+            <div class="about-container">
                 <hr style="float:left; margin-top:1rem">
                 <h3 class="about_header_text">About Me</h3>
-                <div class="about_me_container">
+                <div class="about_me_container" data-aos="fade-right" data-aos-duration="1000">
                     <div class="profile_img_container">
-                        <img src="/images/profile_dev_img.png" alt="image of Muiz"/>
+                        <img src="/images/profilephoto.jpg" alt="image of Muiz"/>
                     </div>
                     <div class="about_me_text">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -111,7 +115,7 @@
                 </div>
                 <hr style="float:right; margin-top:1rem; height: .1rem;">
                 <h3 class="skill_header_text">Skills</h3>
-                <div class="skills_container">
+                <div class="skills_container" data-aos="fade-left" data-aos-duration="1000">
                     
                     <div class="dev_skills_container">
                         <div class="dev_skills">
@@ -166,7 +170,7 @@
         
         <!-- ===== portfolio section starts ===== -->
         <section id="portfolio">
-            <div class="portfolio-container">
+            <div class="portfolio-container" data-aos="fade-down" data-aos-duration="1000">
                 <hr style="float:right; margin-top:2.2rem;">
                 <h3>Portfolio</h3>
                 <div class="portfolio_projects">
@@ -204,6 +208,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-primary">
+                                <a target="_blank" href="#" class="btn">view live</a>
+                                <a target="_blank" href="#" class="btn"><img class="btn_img" src="images/icons8-github.svg"/></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -217,7 +232,7 @@
                 <div class="social_connect_container">
                     <h3>Connect with me</h3>
                     <div class="social_connect_icons">
-                        <div class="contact_icons">
+                        <div class="contact_icons" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
                             <h4>Hit me up!</h4>
                             <ul>
                                 <div><img src="/images/icons8-phone-100.png" alt="phone icon"/><a href="tel:+2349036454103">+23409036454103</a></div>
@@ -225,7 +240,7 @@
                                 <div><img src="/images/icons8-address-100.png" alt="location icon"/><a>FCT, Abuja. Nigeria.</a></div>
                             </ul>
                         </div>
-                        <div class="social_icons">
+                        <div class="social_icons" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
                             <h4>Find me on Social media</h4>
                             <ul>
                                 <li><a target="_blank" href="https://www.instagram.com/dayyyo.3"><img src="/images/icons8-ig (1).svg" alt="instagram icon"/></a></li>
@@ -241,16 +256,17 @@
                     </div>
                     
                 </div>
-                <div class="message_me_container">
+                <div class="message_me_container" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1000">
                     <h3>Have a project or freelance idea? I'm excited to hear about it!</h3>
-                    <form>
+                    <form id="contact-form">
                         <div class="input_form">
-                            <input type="text" placeholder="Name"/>
-                            <input type="email" placeholder="s8n@mail.com"/> 
-                            <input type="text" placeholder="subject"/>
+                            <input type="hidden" name="contact_number">
+                            <input type="text" placeholder="Name" name="user_name" id="userName"/>
+                            <input type="email" placeholder="s8n@mail.com" name="user_email" id="userEmail"/> 
+                            <input type="text" placeholder="subject" name="subject" id="subject"/>
                         
-                            <textarea placeholder="tell me more!"></textarea>
-                            <input class="submit_btn" type="submit"/>
+                            <textarea placeholder="tell me more!" name="message" id="textarea"></textarea>
+                            <input class="submit_btn" type="submit" value="Submit" id="submit"/>
                         </div>
                         
                     </form>
@@ -260,20 +276,8 @@
             
         </footer>
 
-        <script>
-
-            const hamburger = document.querySelector(".hamburger");
-            const navMenu = document.querySelector(".nav_menu");
-
-            hamburger.addEventListener("click", () => {
-                hamburger.classList.toggle("active");
-                navMenu.classList.toggle("active");
-            })
-
-            document.querySelectorAll(".nav_link").forEach(n => n.addEventListener("click", () => {
-                hamburger.classList.remove("active");
-                navMenu.classList.remove("active");
-            }))
-        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="portfolio.js"></script>
     </body>
 </html>

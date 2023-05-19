@@ -1,22 +1,13 @@
 @import url('https://fonts.cdnfonts.com/css/summer-party');
 @import url('https://fonts.cdnfonts.com/css/etweego');
 
+@import 'variables';
+
 $base-color: #0a946a;
-// $base-color: #03503e;
-// $primary: rgba(3, 117, 89, 0.801);
 $white: rgb(243, 243, 243);
 $whiter: white;
-// $span: #0a946a;
-$span: #03503e;
-$primary: var(--base-color);
+$primary: #03503e;
 
-:root {
-    --primary: #{$primary};
-    --base-color: #{$base-color};
-    --white: #{$white};
-    --span-color: #{$span};
-    --whiter: #{$whiter};
-}
 
 * {
     box-sizing: border-box;
@@ -26,7 +17,7 @@ $primary: var(--base-color);
 
 html, body {
     font-family: 'Etweego', sans-serif;
-    background-color: var(--whiter);
+    background-color: $whiter;
 }
 
 //header section starts
@@ -35,7 +26,7 @@ html, body {
     max-width: 1440px;
     width: 100%;
     // margin: 0 auto;
-    background-color: var(--whiter);
+    background-color: $whiter;
     position: fixed;
     top: 0;
     left: 0;
@@ -61,7 +52,7 @@ html, body {
         letter-spacing: 1.2px;
 
         a {
-            color: var(--span-color);
+            color: $primary;
             text-decoration: none;
             font-family: 'Summer Party', sans-serif;
                                                 
@@ -92,8 +83,8 @@ html, body {
             left: -100%;
             top: 3rem;
             flex-direction: column;
-            // color: var(--span-color);
-            background-color: var(--whiter);
+            // color: $primary;
+            background-color: $whiter;
             width: 100%;
             border-radius: 10px;
             text-align: center;
@@ -110,7 +101,7 @@ html, body {
                 .nav_link {
                     transition: 0.3s ease-out;
                     text-decoration: none;
-                    color: var(--span-color);  
+                    color: $primary;  
                 }
 
                 .nav_link:hover {
@@ -121,6 +112,7 @@ html, body {
             .nav_mode_btn {
                 background: none;
                 border: none;
+                cursor:pointer;
 
                 img {
                     max-width: 1.5rem;
@@ -151,7 +143,7 @@ html, body {
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease;
-    background-color: var(--span-color);
+    background-color: $primary;
 }
 
 .hamburger.active .bar:nth-child(2){
@@ -183,7 +175,7 @@ html, body {
             .nav_menu {
                 position: revert;
                 width: 100%;
-                background-color: var(--whiter);
+                background-color: $whiter;
 
                 li {
                     display: inline;
@@ -215,34 +207,35 @@ html, body {
     }
 
     .hero_text_container {
-        // background-color: var(--primary);
+        // background-color: $base-color;
         // min-height: 30vh;
         padding-left: 2rem;
 
         
         h1 {
-            color: var(--primary);
+            color: $base-color;
             font-size: 2rem;
             padding: 5px;
 
             span {
-                color: var(--span-color);
+                color: $primary;
             }
         }
 
         h3 {
-            color: var(--primary);
+            color: $base-color;
             font-size: 1.5rem;
             padding: 5px;
         }
 
         input {
             margin: 10px;
-            background-color: var(--span-color);
-            color: var(--white);
+            background-color: $primary;
+            color: $white;
             border: none;
             padding: 10px;
             border-radius: 5px;
+            cursor: pointer;
         }
         
         @media screen and (min-width:767px) {
@@ -291,13 +284,13 @@ html, body {
 .service-container {
     justify-content: space-around;
     align-items: center;
-    color: var(--base-color);
+    color: $base-color;
     font-weight: 600;
     text-align: center;
     margin: 3rem 0;
 
     h3 {
-        color: var(--span-color);
+        color: $primary;
         font-size: 1.5rem;
         letter-spacing: .2rem;
     }
@@ -355,9 +348,6 @@ html, body {
                     font-size: 1.5rem;
                     letter-spacing: .2rem;
                     max-width: 6rem;
-
-                    hr {
-                    }
                 }
             }
         }
@@ -385,7 +375,7 @@ html, body {
     
     .about_header_text {
         float: right;
-        color: var(--span-color);
+        color: $primary;
         font-size: 1.5rem;
         padding-right:1rem;
 
@@ -401,7 +391,7 @@ html, body {
         gap: 5px;
         padding: 5px;
         width: 100%;
-        // background: var(--primary);
+        // background: $base-color;
 
         @media screen and (min-width:465px) {
             // height: 20vh;
@@ -413,7 +403,6 @@ html, body {
             justify-content: center;
             align-items: center;
             flex-grow: 3;
-            // background: var(--white);
             border-radius: 50%;
             margin: .8rem;
             height: 8rem;
@@ -422,13 +411,13 @@ html, body {
                 max-width: 7rem;
                 max-height: 7rem;
                 border-radius: 50%;
-                background-color: var(--white);
+                background-color: $whiter;
 
                 @media screen and (min-width:767px) {
                     max-height: 10rem;
                     max-width: 10rem;
                     border-radius: 10px;
-                    // border: 2px solid var(--base-color);
+                    // border: 2px solid $base-color;
                 }
             }
 
@@ -441,7 +430,7 @@ html, body {
         .about_me_text {
             width: 100%;
             padding: 10px;
-            color: var(--base-color);
+            color: $base-color;
 
             @media screen and (min-width:767px) {
                 padding: 30px;
@@ -452,11 +441,12 @@ html, body {
                 margin-top: 10px;
                 float: right;
                 margin-top: 5px;
-                background-color: var(--span-color);
-                color: var(--white);
+                background-color: $primary;
+                color: $white;
                 border-radius: 10px;
                 padding: 5px;
                 border: none;
+                cursor: pointer;
 
                 @media screen and (max-width:465px) {
                     margin-top: 20px;
@@ -471,7 +461,7 @@ html, body {
 
     //skills container starts
     .skill_header_text {
-        color: var(--span-color);
+        color: $primary;
         margin-left: 1rem;
         font-size: 1.5rem;
 
@@ -486,7 +476,7 @@ html, body {
         padding: 1rem 0;
 
         h4 {
-            color: var(--primary);
+            color: $base-color;
         }
 
         div {
@@ -517,15 +507,15 @@ html, body {
         
         .skills_header {
             text-align: center;
-            color: var(--span-color)
+            color: $primary;
         }
 
         .soft_skill_container {
             text-align: center;
-            color: var(--base-color);
+            color: $base-color;
 
             h4 {
-                color: var(--span-color);
+                color: $primary;
             }
             .soft_skills_list {
                 ul {
@@ -580,14 +570,13 @@ html, body {
 
 //portfolio section starts
 .portfolio-container {
-    min-height: 30vh;
     padding: 5px;
     font-size: 1.5rem;
     letter-spacing: .15rem;
     margin: 3rem 0;
 
     h3 {
-        color: var(--span-color);
+        color: $primary;
         padding: 1rem;
     }
 
@@ -599,6 +588,7 @@ html, body {
 
         @media screen and (min-width:767px){
             grid-template-columns: auto auto auto auto;
+            gap: 2rem;
         }
     }
 
@@ -608,9 +598,9 @@ html, body {
         margin: 5px;
         justify-content: center;
         padding: 5px;
-        border:1px solid var(--span-color);
+        border:1px solid $primary;
         border-radius: 5px;
-        color: var(--base-color);
+        color: $base-color;
 
         .card-img-top {
             max-height: 50px;
@@ -631,9 +621,9 @@ html, body {
             }
 
             .btn {
-                background-color: var(--span-color);
+                background-color: $primary;
                 text-decoration: none;
-                color: var(--white);
+                color: $white;
                 border-radius: 10px;
                 font-size: 1.5rem;
                 display: flex;
@@ -653,7 +643,7 @@ html, body {
     }
 
     @media screen and (min-width:900px) {
-        margin: 1rem 4rem;
+        margin: 1rem 5rem;
     }
 }
 //portfolio ends
@@ -665,7 +655,7 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    // background: var(--white);
+    // background: $white;
     // border-radius: 50%;
     text-align: center;
     letter-spacing: .2rem;
@@ -685,7 +675,7 @@ html, body {
     .social_connect_container {
 
         h3 {
-            color: var(--span-color);
+            color: $primary;
             font-size: 1.5rem;
             margin: 10px;
         }
@@ -694,7 +684,7 @@ html, body {
             text-align: left;
 
             h4 {
-                color: var(--span-color);
+                color: $primary;
                 margin: 5px;
             }
 
@@ -714,10 +704,10 @@ html, body {
                         padding: 5px;
                         text-decoration: none;
                         font-size: 1.2rem;
-                        color: var(--base-color);
+                        color: $base-color;
 
                         &:hover {
-                            color: var(--span-color);
+                            color: $primary;
                         }
                     }
                 } 
@@ -766,7 +756,7 @@ html, body {
         
         h3 {
             font-size: 1.4rem;
-            color: var(--span-color);
+            color: $primary;
         }
             
 
@@ -781,7 +771,7 @@ html, body {
                 input {
                     min-height: 1.5rem;
                     margin: 3px;
-                    border: 1px solid var(--base-color);
+                    border: 1px solid $base-color;
                     border-radius: 5px;
                     padding: 5px;
 
@@ -790,15 +780,15 @@ html, body {
                 textarea {
                     min-height: 5rem;
                     margin: 3px;
-                    border: 1px solid var(--base-color);
+                    border: 1px solid $base-color;
                     border-radius: 5px;
                     padding: 5px;
 
                 }
 
                 .submit_btn {
-                    background-color: var(--span-color);
-                    color: var(--white);
+                    background-color: $primary;
+                    color: $white;
                 }
 
                 
@@ -811,8 +801,8 @@ html, body {
 }
 
 .footer_text {
-        background-color: var(--span-color);
-        color: var(--white);
+        background-color: $primary;
+        color: $white;
         text-align: center;
         font-size: 1rem;
         letter-spacing: .3rem;
@@ -829,7 +819,7 @@ hr {
         min-width: 50%;
         text-align: center;
         height: .2rem;
-        background-color: var(--span-color);
+        background-color: $primary;
         margin: 0 1rem;
 
         @media screen and (min-width:767px) {
@@ -837,3 +827,5 @@ hr {
             margin: 0 2rem;
         }
 }
+
+@import 'darkmode';

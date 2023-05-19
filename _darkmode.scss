@@ -1,0 +1,29 @@
+body.dark-mode {
+    background-color: $dark-base-color;
+
+    #home,
+    #about,
+    #portfolio,
+    #contact,
+    .service-container
+    {
+        div, h2, p, li, a{
+            color: black;
+        }
+
+        h1, h3, h4 {
+            color: $dark-white;
+        }
+
+        .portfolio_projects{
+            a {
+                background-color: $dark-white;
+            }
+        }
+
+        hr {
+            background-color: $dark-whiter;
+        }
+    }
+    
+}

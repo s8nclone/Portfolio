@@ -1,13 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/summer-party");
 @import url("https://fonts.cdnfonts.com/css/etweego");
-:root {
-  --primary: var(--base-color);
-  --base-color: #0a946a;
-  --white: rgb(243, 243, 243);
-  --span-color: #03503e;
-  --whiter: white;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -16,13 +8,13 @@
 
 html, body {
   font-family: "Etweego", sans-serif;
-  background-color: var(--whiter);
+  background-color: white;
 }
 
 .container {
   max-width: 1440px;
   width: 100%;
-  background-color: var(--whiter);
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -46,7 +38,7 @@ html, body {
   letter-spacing: 1.2px;
 }
 .top-nav .nav_home_btn a {
-  color: var(--span-color);
+  color: #03503e;
   text-decoration: none;
   font-family: "Summer Party", sans-serif;
 }
@@ -70,7 +62,7 @@ html, body {
   left: -100%;
   top: 3rem;
   flex-direction: column;
-  background-color: var(--whiter);
+  background-color: white;
   width: 100%;
   border-radius: 10px;
   text-align: center;
@@ -87,7 +79,7 @@ html, body {
 .top-nav .nav_link_btn .nav_menu li .nav_link {
   transition: 0.3s ease-out;
   text-decoration: none;
-  color: var(--span-color);
+  color: #03503e;
 }
 .top-nav .nav_link_btn .nav_menu li .nav_link:hover {
   color: green;
@@ -95,6 +87,7 @@ html, body {
 .top-nav .nav_link_btn .nav_menu .nav_mode_btn {
   background: none;
   border: none;
+  cursor: pointer;
 }
 .top-nav .nav_link_btn .nav_menu .nav_mode_btn img {
   max-width: 1.5rem;
@@ -118,7 +111,7 @@ html, body {
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease;
-  background-color: var(--span-color);
+  background-color: #03503e;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -146,7 +139,7 @@ html, body {
   .top-nav .nav_link_btn .nav_menu {
     position: revert;
     width: 100%;
-    background-color: var(--whiter);
+    background-color: white;
   }
   .top-nav .nav_link_btn .nav_menu li {
     display: inline;
@@ -172,25 +165,26 @@ html, body {
   padding-left: 2rem;
 }
 .hero-header .hero_text_container h1 {
-  color: var(--primary);
+  color: #0a946a;
   font-size: 2rem;
   padding: 5px;
 }
 .hero-header .hero_text_container h1 span {
-  color: var(--span-color);
+  color: #03503e;
 }
 .hero-header .hero_text_container h3 {
-  color: var(--primary);
+  color: #0a946a;
   font-size: 1.5rem;
   padding: 5px;
 }
 .hero-header .hero_text_container input {
   margin: 10px;
-  background-color: var(--span-color);
-  color: var(--white);
+  background-color: #03503e;
+  color: rgb(243, 243, 243);
   border: none;
   padding: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 @media screen and (min-width: 767px) {
   .hero-header .hero_text_container {
@@ -229,13 +223,13 @@ html, body {
 .service-container {
   justify-content: space-around;
   align-items: center;
-  color: var(--base-color);
+  color: #0a946a;
   font-weight: 600;
   text-align: center;
   margin: 3rem 0;
 }
 .service-container h3 {
-  color: var(--span-color);
+  color: #03503e;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
 }
@@ -300,7 +294,7 @@ html, body {
 }
 .about-container .about_header_text {
   float: right;
-  color: var(--span-color);
+  color: #03503e;
   font-size: 1.5rem;
   padding-right: 1rem;
 }
@@ -331,7 +325,7 @@ html, body {
   max-width: 7rem;
   max-height: 7rem;
   border-radius: 50%;
-  background-color: var(--white);
+  background-color: white;
 }
 @media screen and (min-width: 767px) {
   .about-container .about_me_container .profile_img_container img {
@@ -349,7 +343,7 @@ html, body {
 .about-container .about_me_container .about_me_text {
   width: 100%;
   padding: 10px;
-  color: var(--base-color);
+  color: #0a946a;
 }
 @media screen and (min-width: 767px) {
   .about-container .about_me_container .about_me_text {
@@ -360,11 +354,12 @@ html, body {
   margin-top: 10px;
   float: right;
   margin-top: 5px;
-  background-color: var(--span-color);
-  color: var(--white);
+  background-color: #03503e;
+  color: rgb(243, 243, 243);
   border-radius: 10px;
   padding: 5px;
   border: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 465px) {
   .about-container .about_me_container .about_me_text button {
@@ -377,7 +372,7 @@ html, body {
   }
 }
 .about-container .skill_header_text {
-  color: var(--span-color);
+  color: #03503e;
   margin-left: 1rem;
   font-size: 1.5rem;
 }
@@ -392,7 +387,7 @@ html, body {
   padding: 1rem 0;
 }
 .about-container .skills_container h4 {
-  color: var(--primary);
+  color: #0a946a;
 }
 .about-container .skills_container div ul {
   list-style-type: none;
@@ -413,14 +408,14 @@ html, body {
 }
 .about-container .skills_container .skills_header {
   text-align: center;
-  color: var(--span-color);
+  color: #03503e;
 }
 .about-container .skills_container .soft_skill_container {
   text-align: center;
-  color: var(--base-color);
+  color: #0a946a;
 }
 .about-container .skills_container .soft_skill_container h4 {
-  color: var(--span-color);
+  color: #03503e;
 }
 .about-container .skills_container .soft_skill_container .soft_skills_list ul li {
   padding: 5px;
@@ -460,14 +455,13 @@ html, body {
 }
 
 .portfolio-container {
-  min-height: 30vh;
   padding: 5px;
   font-size: 1.5rem;
   letter-spacing: 0.15rem;
   margin: 3rem 0;
 }
 .portfolio-container h3 {
-  color: var(--span-color);
+  color: #03503e;
   padding: 1rem;
 }
 .portfolio-container .portfolio_projects {
@@ -478,6 +472,7 @@ html, body {
 @media screen and (min-width: 767px) {
   .portfolio-container .portfolio_projects {
     grid-template-columns: auto auto auto auto;
+    gap: 2rem;
   }
 }
 .portfolio-container .card {
@@ -486,9 +481,9 @@ html, body {
   margin: 5px;
   justify-content: center;
   padding: 5px;
-  border: 1px solid var(--span-color);
+  border: 1px solid #03503e;
   border-radius: 5px;
-  color: var(--base-color);
+  color: #0a946a;
 }
 .portfolio-container .card .card-img-top {
   max-height: 50px;
@@ -509,9 +504,9 @@ html, body {
   }
 }
 .portfolio-container .card .btn-primary .btn {
-  background-color: var(--span-color);
+  background-color: #03503e;
   text-decoration: none;
-  color: var(--white);
+  color: rgb(243, 243, 243);
   border-radius: 10px;
   font-size: 1.5rem;
   display: flex;
@@ -529,7 +524,7 @@ html, body {
 }
 @media screen and (min-width: 900px) {
   .portfolio-container {
-    margin: 1rem 4rem;
+    margin: 1rem 5rem;
   }
 }
 
@@ -556,7 +551,7 @@ html, body {
   }
 }
 .contact_footer_section .social_connect_container h3 {
-  color: var(--span-color);
+  color: #03503e;
   font-size: 1.5rem;
   margin: 10px;
 }
@@ -564,7 +559,7 @@ html, body {
   text-align: left;
 }
 .contact_footer_section .social_connect_container .social_connect_icons h4 {
-  color: var(--span-color);
+  color: #03503e;
   margin: 5px;
 }
 .contact_footer_section .social_connect_container .social_connect_icons img {
@@ -583,10 +578,10 @@ html, body {
   padding: 5px;
   text-decoration: none;
   font-size: 1.2rem;
-  color: var(--base-color);
+  color: #0a946a;
 }
 .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul a:hover {
-  color: var(--span-color);
+  color: #03503e;
 }
 .contact_footer_section .social_connect_container .social_connect_icons .social_icons {
   margin-top: 1rem;
@@ -617,7 +612,7 @@ html, body {
 }
 .contact_footer_section .message_me_container h3 {
   font-size: 1.4rem;
-  color: var(--span-color);
+  color: #03503e;
 }
 .contact_footer_section .message_me_container form .input_form {
   display: flex;
@@ -627,25 +622,25 @@ html, body {
 .contact_footer_section .message_me_container form .input_form input {
   min-height: 1.5rem;
   margin: 3px;
-  border: 1px solid var(--base-color);
+  border: 1px solid #0a946a;
   border-radius: 5px;
   padding: 5px;
 }
 .contact_footer_section .message_me_container form .input_form textarea {
   min-height: 5rem;
   margin: 3px;
-  border: 1px solid var(--base-color);
+  border: 1px solid #0a946a;
   border-radius: 5px;
   padding: 5px;
 }
 .contact_footer_section .message_me_container form .input_form .submit_btn {
-  background-color: var(--span-color);
-  color: var(--white);
+  background-color: #03503e;
+  color: rgb(243, 243, 243);
 }
 
 .footer_text {
-  background-color: var(--span-color);
-  color: var(--white);
+  background-color: #03503e;
+  color: rgb(243, 243, 243);
   text-align: center;
   font-size: 1rem;
   letter-spacing: 0.3rem;
@@ -655,7 +650,7 @@ hr {
   min-width: 50%;
   text-align: center;
   height: 0.2rem;
-  background-color: var(--span-color);
+  background-color: #03503e;
   margin: 0 1rem;
 }
 @media screen and (min-width: 767px) {
@@ -663,6 +658,62 @@ hr {
     text-align: center;
     margin: 0 2rem;
   }
+}
+
+body.dark-mode {
+  background-color: #0a946a;
+}
+body.dark-mode #home div, body.dark-mode #home h2, body.dark-mode #home p, body.dark-mode #home li, body.dark-mode #home a,
+body.dark-mode #about div,
+body.dark-mode #about h2,
+body.dark-mode #about p,
+body.dark-mode #about li,
+body.dark-mode #about a,
+body.dark-mode #portfolio div,
+body.dark-mode #portfolio h2,
+body.dark-mode #portfolio p,
+body.dark-mode #portfolio li,
+body.dark-mode #portfolio a,
+body.dark-mode #contact div,
+body.dark-mode #contact h2,
+body.dark-mode #contact p,
+body.dark-mode #contact li,
+body.dark-mode #contact a,
+body.dark-mode .service-container div,
+body.dark-mode .service-container h2,
+body.dark-mode .service-container p,
+body.dark-mode .service-container li,
+body.dark-mode .service-container a {
+  color: black;
+}
+body.dark-mode #home h1, body.dark-mode #home h3, body.dark-mode #home h4,
+body.dark-mode #about h1,
+body.dark-mode #about h3,
+body.dark-mode #about h4,
+body.dark-mode #portfolio h1,
+body.dark-mode #portfolio h3,
+body.dark-mode #portfolio h4,
+body.dark-mode #contact h1,
+body.dark-mode #contact h3,
+body.dark-mode #contact h4,
+body.dark-mode .service-container h1,
+body.dark-mode .service-container h3,
+body.dark-mode .service-container h4 {
+  color: rgb(243, 243, 243);
+}
+body.dark-mode #home .portfolio_projects a,
+body.dark-mode #about .portfolio_projects a,
+body.dark-mode #portfolio .portfolio_projects a,
+body.dark-mode #contact .portfolio_projects a,
+body.dark-mode .service-container .portfolio_projects a {
+  background-color: rgb(243, 243, 243);
+}
+body.dark-mode #home hr,
+body.dark-mode #about hr,
+body.dark-mode #portfolio hr,
+body.dark-mode #contact hr,
+body.dark-mode .service-container hr {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

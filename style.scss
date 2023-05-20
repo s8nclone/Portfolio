@@ -1,5 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/summer-party');
 @import url('https://fonts.cdnfonts.com/css/etweego');
+// @import url('https://fonts.cdnfonts.com/css/cat-liebing-gotisch');
+// @import url('https://fonts.cdnfonts.com/css/cute-bubble');
+// @import url('https://fonts.cdnfonts.com/css/daily-sunday');
 
 @import 'variables';
 
@@ -17,6 +20,11 @@ $primary: #03503e;
 
 html, body {
     font-family: 'Etweego', sans-serif;
+    // font-family: 'Cute Bubble', sans-serif;
+    // font-family: 'CAT Liebing Gotisch', sans-serif;
+    // font-family: 'Daily Sunday', sans-serif;
+                                                
+                                                  
     background-color: $whiter;
 }
 

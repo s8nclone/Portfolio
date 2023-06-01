@@ -1,8 +1,15 @@
 @import url('https://fonts.cdnfonts.com/css/summer-party');
 @import url('https://fonts.cdnfonts.com/css/etweego');
-// @import url('https://fonts.cdnfonts.com/css/cat-liebing-gotisch');
-// @import url('https://fonts.cdnfonts.com/css/cute-bubble');
-// @import url('https://fonts.cdnfonts.com/css/daily-sunday');
+@import url('https://fonts.cdnfonts.com/css/cat-liebing-gotisch');
+@import url('https://fonts.cdnfonts.com/css/cute-bubble');
+@import url('https://fonts.cdnfonts.com/css/daily-sunday');
+@import url('https://fonts.cdnfonts.com/css/cloisterblack-bt');
+@import url('https://fonts.cdnfonts.com/css/khamden-script');
+@import url('https://fonts.cdnfonts.com/css/gralise');
+@import url('https://fonts.cdnfonts.com/css/bertha-script');
+@import url('https://fonts.cdnfonts.com/css/rastalia');
+@import url('https://fonts.cdnfonts.com/css/gafstery');
+
 
 @import 'variables';
 
@@ -16,16 +23,24 @@ $primary: #03503e;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    list-style-type: none;
 }
 
 html, body {
-    font-family: 'Etweego', sans-serif;
+    // font-family: 'Etweego', sans-serif;
     // font-family: 'Cute Bubble', sans-serif;
     // font-family: 'CAT Liebing Gotisch', sans-serif;
     // font-family: 'Daily Sunday', sans-serif;
-                                                
-                                                  
+    // font-family: 'Gafstery', sans-serif;
+    // font-family: 'Rastalia', sans-serif;
+    // font-family: 'Bertha Script', sans-serif;
+    // font-family: 'Gralise', sans-serif;
+    // font-family: 'Khamden Script', sans-serif;
+    font-family: 'CloisterBlack BT', sans-serif;
+    
+    
     background-color: $whiter;
+    overflow-x: clip;
 }
 
 //header section starts
@@ -40,11 +55,14 @@ html, body {
     left: 0;
     right: 0;
     z-index: 999;
-    margin-bottom: 10px;
+
+    @media screen and (min-width:767px){
+        margin-bottom: 10px;
+    }
+    
 }
 
 .top-nav {
-    min-height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,6 +132,7 @@ html, body {
 
                 .nav_link:hover {
                     color:green;
+                    text-decoration: underline $base-color;
                 }
             }
 
@@ -206,7 +225,7 @@ html, body {
 //hero section starts
 .hero-header {
     gap: 5px;
-    margin-top: 5rem;
+    margin-top: 3.5rem;
 
     @media screen and (min-width:767px) {
         display: flex;
@@ -215,11 +234,6 @@ html, body {
     }
 
     .hero_text_container {
-        // background-color: $base-color;
-        // min-height: 30vh;
-        padding-left: 2rem;
-
-        
         h1 {
             color: $base-color;
             font-size: 2rem;
@@ -289,86 +303,86 @@ html, body {
 
 
 //work process and services starts
-.service-container {
-    justify-content: space-around;
-    align-items: center;
-    color: $base-color;
-    font-weight: 600;
-    text-align: center;
-    margin: 3rem 0;
+// .service-container {
+//     justify-content: space-around;
+//     align-items: center;
+//     color: $base-color;
+//     font-weight: 600;
+//     text-align: center;
+//     margin: 3rem 0;
 
-    h3 {
-        color: $primary;
-        font-size: 1.5rem;
-        letter-spacing: .2rem;
-    }
+//     h3 {
+//         color: $primary;
+//         font-size: 1.5rem;
+//         letter-spacing: .2rem;
+//     }
 
-    .service_dev_container {
-        .service_offer {
-            padding: 5px;
-            font-size: 1.2rem;
+//     .service_dev_container {
+//         .service_offer {
+//             padding: 5px;
+//             font-size: 1.2rem;
 
-            ul {
-                li {
-                    display: inline;
-                    padding: 5px;
-                }
-            }
+//             ul {
+//                 li {
+//                     display: inline;
+//                     padding: 5px;
+//                 }
+//             }
 
-            @media screen and (min-width:767px) {
-                font-size: 1.5rem;
+//             @media screen and (min-width:767px) {
+//                 font-size: 1.5rem;
 
-                ul {
-                    li {
-                        letter-spacing: .2rem;
-                        list-style-type: none;
-                        padding-left: 10px;
-                    }
-                }
-            }
-        }
-    }
+//                 ul {
+//                     li {
+//                         letter-spacing: .2rem;
+//                        
+//                         padding-left: 10px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
 
     
 
-    .working_process_container{
+//     .working_process_container{
 
-        .working_process {
-            padding: 5px;
+//         .working_process {
+//             padding: 5px;
             
-            ul {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                max-width: 2rem;
-                margin: auto;
-                font-size: 1rem;
-                letter-spacing: .1rem;
+//             ul {
+//                 display: flex;
+//                 justify-content: space-around;
+//                 align-items: center;
+//                 max-width: 2rem;
+//                 margin: auto;
+//                 font-size: 1rem;
+//                 letter-spacing: .1rem;
                 
-                hr {
-                    width: .1rem;
-                    height: .1rem;
-                }
-            }
+//                 hr {
+//                     width: .1rem;
+//                     height: .1rem;
+//                 }
+//             }
             
-            @media screen and (min-width: 767px) {
-                ul {
-                    font-size: 1.5rem;
-                    letter-spacing: .2rem;
-                    max-width: 6rem;
-                }
-            }
-        }
+//             @media screen and (min-width: 767px) {
+//                 ul {
+//                     font-size: 1.5rem;
+//                     letter-spacing: .2rem;
+//                     max-width: 5rem;
+//                 }
+//             }
+//         }
 
-    }
+//     }
 
-    @media screen and (min-width: 767px) {
-        text-align: center;
-        display: block;
-        height: auto;
-        margin: 5rem;
-    }
-}
+//     @media screen and (min-width: 767px) {
+//         text-align: center;
+//         display: block;
+//         height: auto;
+//         margin: 5rem;
+//     }
+// }
 //work process and services ends
 
 
@@ -399,11 +413,6 @@ html, body {
         gap: 5px;
         padding: 5px;
         width: 100%;
-        // background: $base-color;
-
-        @media screen and (min-width:465px) {
-            // height: 20vh;
-        }
 
         .profile_img_container {
             width: 40%;
@@ -425,7 +434,6 @@ html, body {
                     max-height: 10rem;
                     max-width: 10rem;
                     border-radius: 10px;
-                    // border: 2px solid $base-color;
                 }
             }
 
@@ -485,13 +493,6 @@ html, body {
 
         h4 {
             color: $base-color;
-        }
-
-        div {
-            // margin-top: 10px;
-            ul {
-                list-style-type: none;
-            }
         }
 
         .dev_skills_container {
@@ -578,7 +579,6 @@ html, body {
 
 //portfolio section starts
 .portfolio-container {
-    padding: 5px;
     font-size: 1.5rem;
     letter-spacing: .15rem;
     margin: 3rem 0;
@@ -663,13 +663,9 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    // background: $white;
-    // border-radius: 50%;
     text-align: center;
     letter-spacing: .2rem;
     font-weight:600 ;
-    font-size: 1.2rem;
-    margin: 2rem 6rem;
 
     @media screen and (min-width: 465px) {
         flex-direction: row;
@@ -678,9 +674,16 @@ html, body {
 
     @media screen and (min-width:900px) {
         margin: 2rem 10rem;
+        font-size: 1.2rem;
+    }
+
+    p {
+        color: $base-color;
+        font-size: 1rem;
     }
 
     .social_connect_container {
+        margin: 2rem 0rem;
 
         h3 {
             color: $primary;
@@ -697,7 +700,7 @@ html, body {
             }
 
             img {
-                max-width: 3rem;
+                max-width: 2rem;
                 max-height: 2rem;
             }
 
@@ -707,22 +710,25 @@ html, body {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                
                     
                     a {
-                        padding: 5px;
                         text-decoration: none;
-                        font-size: 1.2rem;
                         color: $base-color;
 
                         &:hover {
                             color: $primary;
+                        }
+
+                        @media screen and (min-width:767px) {
+                            padding: 5px;
+                            font-size: 1.2rem;
                         }
                     }
                 } 
             }
 
             .social_icons {
-                margin-top: 1rem;
                 padding: 5px;
 
                 ul {
@@ -747,23 +753,21 @@ html, body {
                 
             }
         }
-
-        ul {
-            list-style-type: none;
-        }
     }
 
     .message_me_container {
+        margin-bottom: 1rem;
         padding: 5px;
         display: flex;
         flex-direction: column;
+        width:20rem;
 
         @media screen and (min-width:767px) {
             width: 40%;
         }
         
         h3 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             color: $primary;
         }
             
@@ -815,11 +819,6 @@ html, body {
         font-size: 1rem;
         letter-spacing: .3rem;
         font-weight: 600;
-        
-        @media screen and (min-width:767px) {
-            // background-color
-            // margin: 0 10rem;
-        }
     }
 
 hr {

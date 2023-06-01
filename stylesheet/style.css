@@ -1,14 +1,25 @@
 @import url("https://fonts.cdnfonts.com/css/summer-party");
 @import url("https://fonts.cdnfonts.com/css/etweego");
+@import url("https://fonts.cdnfonts.com/css/cat-liebing-gotisch");
+@import url("https://fonts.cdnfonts.com/css/cute-bubble");
+@import url("https://fonts.cdnfonts.com/css/daily-sunday");
+@import url("https://fonts.cdnfonts.com/css/cloisterblack-bt");
+@import url("https://fonts.cdnfonts.com/css/khamden-script");
+@import url("https://fonts.cdnfonts.com/css/gralise");
+@import url("https://fonts.cdnfonts.com/css/bertha-script");
+@import url("https://fonts.cdnfonts.com/css/rastalia");
+@import url("https://fonts.cdnfonts.com/css/gafstery");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 html, body {
-  font-family: "Etweego", sans-serif;
+  font-family: "CloisterBlack BT", sans-serif;
   background-color: white;
+  overflow-x: clip;
 }
 
 .container {
@@ -20,11 +31,14 @@ html, body {
   left: 0;
   right: 0;
   z-index: 999;
-  margin-bottom: 10px;
+}
+@media screen and (min-width: 767px) {
+  .container {
+    margin-bottom: 10px;
+  }
 }
 
 .top-nav {
-  min-height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,6 +97,7 @@ html, body {
 }
 .top-nav .nav_link_btn .nav_menu li .nav_link:hover {
   color: green;
+  text-decoration: underline #0a946a;
 }
 .top-nav .nav_link_btn .nav_menu .nav_mode_btn {
   background: none;
@@ -152,7 +167,7 @@ html, body {
 }
 .hero-header {
   gap: 5px;
-  margin-top: 5rem;
+  margin-top: 3.5rem;
 }
 @media screen and (min-width: 767px) {
   .hero-header {
@@ -160,9 +175,6 @@ html, body {
     justify-content: space-between;
     margin: 6rem 5rem 5rem 5rem;
   }
-}
-.hero-header .hero_text_container {
-  padding-left: 2rem;
 }
 .hero-header .hero_text_container h1 {
   color: #0a946a;
@@ -217,69 +229,6 @@ html, body {
   .hero-header .hero_img_container img {
     max-width: 500px;
     max-height: 500px;
-  }
-}
-
-.service-container {
-  justify-content: space-around;
-  align-items: center;
-  color: #0a946a;
-  font-weight: 600;
-  text-align: center;
-  margin: 3rem 0;
-}
-.service-container h3 {
-  color: #03503e;
-  font-size: 1.5rem;
-  letter-spacing: 0.2rem;
-}
-.service-container .service_dev_container .service_offer {
-  padding: 5px;
-  font-size: 1.2rem;
-}
-.service-container .service_dev_container .service_offer ul li {
-  display: inline;
-  padding: 5px;
-}
-@media screen and (min-width: 767px) {
-  .service-container .service_dev_container .service_offer {
-    font-size: 1.5rem;
-  }
-  .service-container .service_dev_container .service_offer ul li {
-    letter-spacing: 0.2rem;
-    list-style-type: none;
-    padding-left: 10px;
-  }
-}
-.service-container .working_process_container .working_process {
-  padding: 5px;
-}
-.service-container .working_process_container .working_process ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 2rem;
-  margin: auto;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-}
-.service-container .working_process_container .working_process ul hr {
-  width: 0.1rem;
-  height: 0.1rem;
-}
-@media screen and (min-width: 767px) {
-  .service-container .working_process_container .working_process ul {
-    font-size: 1.5rem;
-    letter-spacing: 0.2rem;
-    max-width: 6rem;
-  }
-}
-@media screen and (min-width: 767px) {
-  .service-container {
-    text-align: center;
-    display: block;
-    height: auto;
-    margin: 5rem;
   }
 }
 
@@ -389,9 +338,6 @@ html, body {
 .about-container .skills_container h4 {
   color: #0a946a;
 }
-.about-container .skills_container div ul {
-  list-style-type: none;
-}
 .about-container .skills_container .dev_skills_container {
   flex-grow: 2;
   display: flex;
@@ -455,7 +401,6 @@ html, body {
 }
 
 .portfolio-container {
-  padding: 5px;
   font-size: 1.5rem;
   letter-spacing: 0.15rem;
   margin: 3rem 0;
@@ -536,8 +481,6 @@ html, body {
   text-align: center;
   letter-spacing: 0.2rem;
   font-weight: 600;
-  font-size: 1.2rem;
-  margin: 2rem 6rem;
 }
 @media screen and (min-width: 465px) {
   .contact_footer_section {
@@ -548,7 +491,15 @@ html, body {
 @media screen and (min-width: 900px) {
   .contact_footer_section {
     margin: 2rem 10rem;
+    font-size: 1.2rem;
   }
+}
+.contact_footer_section p {
+  color: #0a946a;
+  font-size: 1rem;
+}
+.contact_footer_section .social_connect_container {
+  margin: 2rem 0rem;
 }
 .contact_footer_section .social_connect_container h3 {
   color: #03503e;
@@ -563,7 +514,7 @@ html, body {
   margin: 5px;
 }
 .contact_footer_section .social_connect_container .social_connect_icons img {
-  max-width: 3rem;
+  max-width: 2rem;
   max-height: 2rem;
 }
 .contact_footer_section .social_connect_container .social_connect_icons .contact_icons {
@@ -575,16 +526,19 @@ html, body {
   justify-content: center;
 }
 .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul a {
-  padding: 5px;
   text-decoration: none;
-  font-size: 1.2rem;
   color: #0a946a;
 }
 .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul a:hover {
   color: #03503e;
 }
+@media screen and (min-width: 767px) {
+  .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul a {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+}
 .contact_footer_section .social_connect_container .social_connect_icons .social_icons {
-  margin-top: 1rem;
   padding: 5px;
 }
 .contact_footer_section .social_connect_container .social_connect_icons .social_icons ul {
@@ -597,13 +551,12 @@ html, body {
 .contact_footer_section .social_connect_container .social_connect_icons .social_icons ul li:hover {
   transform: scale(1.5);
 }
-.contact_footer_section .social_connect_container ul {
-  list-style-type: none;
-}
 .contact_footer_section .message_me_container {
+  margin-bottom: 1rem;
   padding: 5px;
   display: flex;
   flex-direction: column;
+  width: 20rem;
 }
 @media screen and (min-width: 767px) {
   .contact_footer_section .message_me_container {
@@ -611,7 +564,7 @@ html, body {
   }
 }
 .contact_footer_section .message_me_container h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #03503e;
 }
 .contact_footer_section .message_me_container form .input_form {
@@ -646,6 +599,7 @@ html, body {
   letter-spacing: 0.3rem;
   font-weight: 600;
 }
+
 hr {
   min-width: 50%;
   text-align: center;

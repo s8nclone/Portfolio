@@ -1,14 +1,10 @@
 @import url("https://fonts.cdnfonts.com/css/summer-party");
-@import url("https://fonts.cdnfonts.com/css/etweego");
-@import url("https://fonts.cdnfonts.com/css/cat-liebing-gotisch");
-@import url("https://fonts.cdnfonts.com/css/cute-bubble");
-@import url("https://fonts.cdnfonts.com/css/daily-sunday");
-@import url("https://fonts.cdnfonts.com/css/cloisterblack-bt");
 @import url("https://fonts.cdnfonts.com/css/khamden-script");
 @import url("https://fonts.cdnfonts.com/css/gralise");
 @import url("https://fonts.cdnfonts.com/css/bertha-script");
-@import url("https://fonts.cdnfonts.com/css/rastalia");
-@import url("https://fonts.cdnfonts.com/css/gafstery");
+@import url("https://fonts.cdnfonts.com/css/mystical-floralish");
+@import url("https://fonts.cdnfonts.com/css/manfitte");
+@import url("https://fonts.cdnfonts.com/css/bronten");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -17,11 +13,26 @@
 }
 
 html, body {
-  font-family: "CloisterBlack BT", sans-serif;
+  font-family: "Mystical Floralish", sans-serif;
+  font-family: "Bronten", sans-serif;
+  font-family: "Manfitte", sans-serif;
+  color: #03503e;
   background-color: white;
   overflow-x: clip;
+  list-style: none;
 }
 
+h1, h2,
+h3, h4,
+h5, h6,
+.nav_menu li {
+  font-family: "Bertha Script", sans-serif;
+  font-family: "Gralise", sans-serif;
+  font-family: "Khamden Script", sans-serif;
+  color: #0a946a;
+}
+
+/*<===== header section starts =====>*/
 .container {
   max-width: 1440px;
   width: 100%;
@@ -42,7 +53,6 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
 }
 .top-nav .nav_home_btn {
   font-size: 1.2rem;
@@ -52,7 +62,7 @@ html, body {
   letter-spacing: 1.2px;
 }
 .top-nav .nav_home_btn a {
-  color: #03503e;
+  color: #0a946a;
   text-decoration: none;
   font-family: "Summer Party", sans-serif;
 }
@@ -65,7 +75,7 @@ html, body {
     text-align: center;
     min-width: 40%;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .top-nav .nav_home_btn span {
     font-size: 2rem;
@@ -93,16 +103,17 @@ html, body {
 .top-nav .nav_link_btn .nav_menu li .nav_link {
   transition: 0.3s ease-out;
   text-decoration: none;
-  color: #03503e;
+  color: #0a946a;
 }
 .top-nav .nav_link_btn .nav_menu li .nav_link:hover {
   color: green;
-  text-decoration: underline #0a946a;
+  text-decoration: underline #03503e;
 }
 .top-nav .nav_link_btn .nav_menu .nav_mode_btn {
   background: none;
   border: none;
   cursor: pointer;
+  color: #0a946a;
 }
 .top-nav .nav_link_btn .nav_menu .nav_mode_btn img {
   max-width: 1.5rem;
@@ -112,6 +123,7 @@ html, body {
   left: 0;
 }
 
+/*<===== hamburger styling =====>*/
 .hamburger {
   display: block;
   cursor: pointer;
@@ -162,9 +174,10 @@ html, body {
   }
   .top-nav .nav_link_btn .nav_menu .nav_mode_btn {
     width: 3rem;
-    margin-left: 2rem;
   }
 }
+/*<===== header section ends =====>*/
+/*<===== hero section starts =====>*/
 .hero-header {
   gap: 5px;
   margin-top: 3.5rem;
@@ -173,11 +186,10 @@ html, body {
   .hero-header {
     display: flex;
     justify-content: space-between;
-    margin: 6rem 5rem 5rem 5rem;
+    margin: 4rem 5rem 0rem 5rem;
   }
 }
 .hero-header .hero_text_container h1 {
-  color: #0a946a;
   font-size: 2rem;
   padding: 5px;
 }
@@ -185,9 +197,14 @@ html, body {
   color: #03503e;
 }
 .hero-header .hero_text_container h3 {
-  color: #0a946a;
   font-size: 1.5rem;
   padding: 5px;
+}
+.hero-header .hero_text_container p {
+  font-size: 1rem;
+  padding: 5px;
+  letter-spacing: 0.08rem;
+  color: #03503e;
 }
 .hero-header .hero_text_container input {
   margin: 10px;
@@ -209,7 +226,10 @@ html, body {
     font-size: 3rem;
   }
   .hero-header .hero_text_container h3 {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+  .hero-header .hero_text_container p {
+    font-size: 1.5rem;
   }
 }
 .hero-header .hero_img_container {
@@ -232,9 +252,76 @@ html, body {
   }
 }
 
+/*<===== hero section ends =====>*/
+/*<===== work process and services starts =====>*/
+.service-container {
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+  text-align: center;
+  margin: 3rem 0;
+}
+.service-container h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.service-container .service_dev_container .service_offer {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+.service-container .service_dev_container .service_offer ul li {
+  padding: 5px;
+}
+@media screen and (min-width: 767px) {
+  .service-container .service_dev_container .service_offer {
+    font-size: 1.5rem;
+  }
+  .service-container .service_dev_container .service_offer ul li {
+    display: inline;
+    letter-spacing: 0.2rem;
+    padding-left: 10px;
+  }
+}
+.service-container .working_process_container .working_process {
+  padding: 5px;
+}
+.service-container .working_process_container .working_process ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 2rem;
+  margin: auto;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+.service-container .working_process_container .working_process ul div {
+  padding: 0 0.5rem;
+}
+@media screen and (min-width: 767px) {
+  .service-container .working_process_container .working_process ul {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    max-width: 5rem;
+  }
+  .service-container .working_process_container .working_process ul div {
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 767px) {
+  .service-container {
+    text-align: center;
+    display: block;
+    height: auto;
+    margin: 5rem;
+  }
+}
+
+/*<===== work process and services ends =====>*/
+/*<===== about me starts =====>*/
 .about-container {
   font-size: 1.5rem;
   letter-spacing: 0.15rem;
+  /* <===== skills container starts =====>*/
 }
 @media screen and (min-width: 900px) {
   .about-container {
@@ -243,7 +330,6 @@ html, body {
 }
 .about-container .about_header_text {
   float: right;
-  color: #03503e;
   font-size: 1.5rem;
   padding-right: 1rem;
 }
@@ -292,7 +378,6 @@ html, body {
 .about-container .about_me_container .about_me_text {
   width: 100%;
   padding: 10px;
-  color: #0a946a;
 }
 @media screen and (min-width: 767px) {
   .about-container .about_me_container .about_me_text {
@@ -321,7 +406,6 @@ html, body {
   }
 }
 .about-container .skill_header_text {
-  color: #03503e;
   margin-left: 1rem;
   font-size: 1.5rem;
 }
@@ -334,9 +418,6 @@ html, body {
   display: flex;
   flex-direction: column;
   padding: 1rem 0;
-}
-.about-container .skills_container h4 {
-  color: #0a946a;
 }
 .about-container .skills_container .dev_skills_container {
   flex-grow: 2;
@@ -354,18 +435,13 @@ html, body {
 }
 .about-container .skills_container .skills_header {
   text-align: center;
-  color: #03503e;
 }
 .about-container .skills_container .soft_skill_container {
   text-align: center;
-  color: #0a946a;
-}
-.about-container .skills_container .soft_skill_container h4 {
-  color: #03503e;
 }
 .about-container .skills_container .soft_skill_container .soft_skills_list ul li {
   padding: 5px;
-  display: inline;
+  justify-content: center;
 }
 @media screen and (min-width: 767px) {
   .about-container .skills_container {
@@ -400,14 +476,25 @@ html, body {
   }
 }
 
+/*<===== about me ends =====>*/
+/*<===== portfolio section starts =====>*/
 .portfolio-container {
   font-size: 1.5rem;
   letter-spacing: 0.15rem;
   margin: 3rem 0;
 }
 .portfolio-container h3 {
-  color: #03503e;
   padding: 1rem;
+}
+.portfolio-container p {
+  padding: 5px;
+}
+.portfolio-container p span a {
+  color: #0a946a;
+  text-decoration: none;
+}
+.portfolio-container p span a:hover {
+  color: #03503e;
 }
 .portfolio-container .portfolio_projects {
   display: grid;
@@ -416,8 +503,9 @@ html, body {
 }
 @media screen and (min-width: 767px) {
   .portfolio-container .portfolio_projects {
-    grid-template-columns: auto auto auto auto;
-    gap: 2rem;
+    margin: 0 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
   }
 }
 .portfolio-container .card {
@@ -428,7 +516,6 @@ html, body {
   padding: 5px;
   border: 1px solid #03503e;
   border-radius: 5px;
-  color: #0a946a;
 }
 .portfolio-container .card .card-img-top {
   max-height: 50px;
@@ -457,6 +544,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 @media screen and (min-width: 767px) {
   .portfolio-container .card .btn-primary .btn {
@@ -473,6 +561,8 @@ html, body {
   }
 }
 
+/*<===== portfolio ends =====>*/
+/*<===== footer section starts =====>*/
 .contact_footer_section {
   display: flex;
   flex-direction: column;
@@ -495,14 +585,12 @@ html, body {
   }
 }
 .contact_footer_section p {
-  color: #0a946a;
   font-size: 1rem;
 }
 .contact_footer_section .social_connect_container {
   margin: 2rem 0rem;
 }
 .contact_footer_section .social_connect_container h3 {
-  color: #03503e;
   font-size: 1.5rem;
   margin: 10px;
 }
@@ -510,7 +598,6 @@ html, body {
   text-align: left;
 }
 .contact_footer_section .social_connect_container .social_connect_icons h4 {
-  color: #03503e;
   margin: 5px;
 }
 .contact_footer_section .social_connect_container .social_connect_icons img {
@@ -525,12 +612,15 @@ html, body {
   flex-direction: column;
   justify-content: center;
 }
+.contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul div {
+  display: flex;
+}
 .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul a {
   text-decoration: none;
-  color: #0a946a;
+  color: #03503e;
 }
 .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul a:hover {
-  color: #03503e;
+  color: #0a946a;
 }
 @media screen and (min-width: 767px) {
   .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul a {
@@ -561,11 +651,11 @@ html, body {
 @media screen and (min-width: 767px) {
   .contact_footer_section .message_me_container {
     width: 40%;
+    margin: 1rem 0;
   }
 }
 .contact_footer_section .message_me_container h3 {
   font-size: 1.3rem;
-  color: #03503e;
 }
 .contact_footer_section .message_me_container form .input_form {
   display: flex;

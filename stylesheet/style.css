@@ -1,8 +1,4 @@
 @import url("https://fonts.cdnfonts.com/css/summer-party");
-@import url("https://fonts.cdnfonts.com/css/khamden-script");
-@import url("https://fonts.cdnfonts.com/css/gralise");
-@import url("https://fonts.cdnfonts.com/css/bertha-script");
-@import url("https://fonts.cdnfonts.com/css/mystical-floralish");
 @import url("https://fonts.cdnfonts.com/css/manfitte");
 @import url("https://fonts.cdnfonts.com/css/bronten");
 * {
@@ -13,10 +9,8 @@
 }
 
 html, body {
-  font-family: "Mystical Floralish", sans-serif;
-  font-family: "Bronten", sans-serif;
   font-family: "Manfitte", sans-serif;
-  color: #03503e;
+  color: black;
   background-color: white;
   overflow-x: clip;
   list-style: none;
@@ -26,10 +20,8 @@ h1, h2,
 h3, h4,
 h5, h6,
 .nav_menu li {
-  font-family: "Bertha Script", sans-serif;
-  font-family: "Gralise", sans-serif;
-  font-family: "Khamden Script", sans-serif;
-  color: #0a946a;
+  font-family: "Bronten", sans-serif;
+  color: #03503e;
 }
 
 /*<===== header section starts =====>*/
@@ -106,7 +98,7 @@ h5, h6,
   color: #0a946a;
 }
 .top-nav .nav_link_btn .nav_menu li .nav_link:hover {
-  color: green;
+  color: #03503e;
   text-decoration: underline #03503e;
 }
 .top-nav .nav_link_btn .nav_menu .nav_mode_btn {
@@ -194,7 +186,7 @@ h5, h6,
   padding: 5px;
 }
 .hero-header .hero_text_container h1 span {
-  color: #03503e;
+  color: #0a946a;
 }
 .hero-header .hero_text_container h3 {
   font-size: 1.5rem;
@@ -214,6 +206,9 @@ h5, h6,
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+}
+.hero-header .hero_text_container input:hover {
+  background-color: #0a946a;
 }
 @media screen and (min-width: 767px) {
   .hero-header .hero_text_container {
@@ -404,6 +399,9 @@ h5, h6,
   .about-container .about_me_container .about_me_text button {
     margin: 20px;
   }
+}
+.about-container .about_me_container .about_me_text button:hover {
+  background-color: #0a946a;
 }
 .about-container .skill_header_text {
   margin-left: 1rem;
@@ -617,10 +615,10 @@ h5, h6,
 }
 .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul a {
   text-decoration: none;
-  color: #03503e;
+  color: black;
 }
 .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul a:hover {
-  color: #0a946a;
+  color: #03503e;
 }
 @media screen and (min-width: 767px) {
   .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul a {
@@ -707,42 +705,50 @@ hr {
 body.dark-mode {
   background-color: #0a946a;
 }
-body.dark-mode #home div, body.dark-mode #home h2, body.dark-mode #home p, body.dark-mode #home li, body.dark-mode #home a,
+body.dark-mode #home div, body.dark-mode #home h2, body.dark-mode #home p, body.dark-mode #home li, body.dark-mode #home a, body.dark-mode #home span,
 body.dark-mode #about div,
 body.dark-mode #about h2,
 body.dark-mode #about p,
 body.dark-mode #about li,
 body.dark-mode #about a,
+body.dark-mode #about span,
 body.dark-mode #portfolio div,
 body.dark-mode #portfolio h2,
 body.dark-mode #portfolio p,
 body.dark-mode #portfolio li,
 body.dark-mode #portfolio a,
+body.dark-mode #portfolio span,
 body.dark-mode #contact div,
 body.dark-mode #contact h2,
 body.dark-mode #contact p,
 body.dark-mode #contact li,
 body.dark-mode #contact a,
+body.dark-mode #contact span,
 body.dark-mode .service-container div,
 body.dark-mode .service-container h2,
 body.dark-mode .service-container p,
 body.dark-mode .service-container li,
-body.dark-mode .service-container a {
+body.dark-mode .service-container a,
+body.dark-mode .service-container span {
   color: black;
 }
-body.dark-mode #home h1, body.dark-mode #home h3, body.dark-mode #home h4,
+body.dark-mode #home h1, body.dark-mode #home h3, body.dark-mode #home h4, body.dark-mode #home h5,
 body.dark-mode #about h1,
 body.dark-mode #about h3,
 body.dark-mode #about h4,
+body.dark-mode #about h5,
 body.dark-mode #portfolio h1,
 body.dark-mode #portfolio h3,
 body.dark-mode #portfolio h4,
+body.dark-mode #portfolio h5,
 body.dark-mode #contact h1,
 body.dark-mode #contact h3,
 body.dark-mode #contact h4,
+body.dark-mode #contact h5,
 body.dark-mode .service-container h1,
 body.dark-mode .service-container h3,
-body.dark-mode .service-container h4 {
+body.dark-mode .service-container h4,
+body.dark-mode .service-container h5 {
   color: rgb(243, 243, 243);
 }
 body.dark-mode #home .portfolio_projects a,

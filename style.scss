@@ -1,8 +1,4 @@
 @import url('https://fonts.cdnfonts.com/css/summer-party');
-@import url('https://fonts.cdnfonts.com/css/khamden-script');
-@import url('https://fonts.cdnfonts.com/css/gralise');
-@import url('https://fonts.cdnfonts.com/css/bertha-script');
-@import url('https://fonts.cdnfonts.com/css/mystical-floralish');
 @import url('https://fonts.cdnfonts.com/css/manfitte');
 @import url('https://fonts.cdnfonts.com/css/bronten');
 
@@ -23,11 +19,10 @@ $primary: #03503e;
 }
 
 html, body {
-    font-family: 'Mystical Floralish', sans-serif;
-    font-family: 'Bronten', sans-serif;
     font-family: 'Manfitte', sans-serif;
                                                 
-    color: $primary;
+    // color: $primary;
+    color: black;
     
     background-color: $whiter;
     overflow-x: clip;
@@ -39,11 +34,10 @@ h3, h4,
 h5, h6,
 // .hero_text_container p,
 .nav_menu li {
-    font-family: 'Bertha Script', sans-serif;
-    font-family: 'Gralise', sans-serif;
-    font-family: 'Khamden Script', sans-serif;
+    font-family: 'Bronten', sans-serif;
 
-    color: $base-color;
+    // color: $base-color;
+    color: $primary;
 }
 
 /*<===== header section starts =====>*/
@@ -133,7 +127,7 @@ h5, h6,
                 }
 
                 .nav_link:hover {
-                    color:green;
+                    color: $primary;
                     text-decoration: underline $primary;
                 }
             }
@@ -242,7 +236,7 @@ h5, h6,
             padding: 5px;
 
             span {
-                color: $primary;
+                color: $base-color;
             }
         }
 
@@ -266,6 +260,10 @@ h5, h6,
             padding: 10px;
             border-radius: 5px;
             cursor: pointer;
+
+            &:hover {
+                background-color: $base-color;
+            }
         }
         
         @media screen and (min-width:767px) {
@@ -480,6 +478,10 @@ h5, h6,
 
                 @media screen and (min-width:767px) {
                     margin: 20px;
+                }
+
+                &:hover {
+                    background-color: $base-color;
                 }
             }
         }
@@ -733,10 +735,10 @@ h5, h6,
 
                     a {
                         text-decoration: none;
-                        color: $primary;
+                        color: black;
 
                         &:hover {
-                            color: $base-color;
+                            color: $primary;
                         }
 
                         @media screen and (min-width:767px) {

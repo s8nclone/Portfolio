@@ -7,11 +7,11 @@ body.dark-mode {
     #contact,
     .service-container
     {
-        div, h2, p, li, a{
+        div, h2, p, li, a, span{
             color: black;
         }
 
-        h1, h3, h4 {
+        h1, h3, h4, h5 {
             color: $dark-white;
         }
 

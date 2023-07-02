@@ -269,9 +269,10 @@ h5, h6,
             padding: 30px;
             min-height: 13rem;
             text-align: center;
+            margin: auto 0;
 
             h1 {
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
 
             h3 {
@@ -317,7 +318,9 @@ h5, h6,
     align-items: center;
     font-weight: 600;
     text-align: center;
-    margin: 3rem 0;
+    margin: .5rem 0;
+    text-transform: capitalize;
+    
 
     h3 {
         font-size: 1.5rem;
@@ -337,7 +340,7 @@ h5, h6,
 
             @media screen and (min-width:767px) {
                 font-size: 1.5rem;
-
+                margin-bottom: 1rem;
                 ul {
                     li {
                         display: inline;
@@ -387,7 +390,7 @@ h5, h6,
         text-align: center;
         display: block;
         height: auto;
-        margin: 5rem;
+        // margin: 5rem;
     }
 }
 /*<===== work process and services ends =====>*/
@@ -400,7 +403,7 @@ h5, h6,
     letter-spacing: .15rem;
 
     @media screen and (min-width:900px) {
-        margin: 5rem;
+        // margin: 5rem;
     }
     
     .about_header_text {
@@ -684,7 +687,7 @@ h5, h6,
     align-items: center;
     text-align: center;
     letter-spacing: .2rem;
-    font-weight:600 ;
+    font-weight:600;
 
     @media screen and (min-width: 465px) {
         flex-direction: row;
@@ -692,7 +695,7 @@ h5, h6,
     }
 
     @media screen and (min-width:900px) {
-        margin: 2rem 10rem;
+        margin: 1rem 10rem;
         font-size: 1.2rem;
     }
 

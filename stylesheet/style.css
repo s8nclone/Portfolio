@@ -216,9 +216,10 @@ h5, h6,
     padding: 30px;
     min-height: 13rem;
     text-align: center;
+    margin: auto 0;
   }
   .hero-header .hero_text_container h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .hero-header .hero_text_container h3 {
     font-size: 2rem;
@@ -254,7 +255,8 @@ h5, h6,
   align-items: center;
   font-weight: 600;
   text-align: center;
-  margin: 3rem 0;
+  margin: 0.5rem 0;
+  text-transform: capitalize;
 }
 .service-container h3 {
   font-size: 1.5rem;
@@ -270,6 +272,7 @@ h5, h6,
 @media screen and (min-width: 767px) {
   .service-container .service_dev_container .service_offer {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
   .service-container .service_dev_container .service_offer ul li {
     display: inline;
@@ -307,7 +310,6 @@ h5, h6,
     text-align: center;
     display: block;
     height: auto;
-    margin: 5rem;
   }
 }
 
@@ -317,11 +319,6 @@ h5, h6,
   font-size: 1.5rem;
   letter-spacing: 0.15rem;
   /* <===== skills container starts =====>*/
-}
-@media screen and (min-width: 900px) {
-  .about-container {
-    margin: 5rem;
-  }
 }
 .about-container .about_header_text {
   float: right;
@@ -578,7 +575,7 @@ h5, h6,
 }
 @media screen and (min-width: 900px) {
   .contact_footer_section {
-    margin: 2rem 10rem;
+    margin: 1rem 10rem;
     font-size: 1.2rem;
   }
 }

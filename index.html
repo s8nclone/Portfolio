@@ -16,17 +16,17 @@
     <body>
         <!-- ===== header starts ===== -->
 
-        <header>
+        <header id="header">
             <div class="container" data-aos="fade-down">
                 <nav class="top-nav">
                     <div class="nav_home_btn">
-                        <a href="#home"><span>A</span>bdulmuiz <span>F</span>arayola&trade;</a>
+                        <a href="#home">ABDULMUIZ FARAYOLA</a>
                     </div>
                     <div class="nav_link_btn">
                         <ul class="nav_menu">
-                            <li><a href="#about" class="nav_link">About</a></li>
-                            <li><a href="#portfolio" class="nav_link">Portfolio</a></li>
-                            <li><a href="#contact" class="nav_link">Contact</a></li>
+                            <li><a href="#about" class="nav_link">ABOUT</a></li>
+                            <li><a href="#portfolio" class="nav_link">WORK</a></li>
+                            <li><a href="#contact" class="nav_link">CONTACT</a></li>
 
                             <button class="nav_mode_btn" id="dark-mode-btn"><img src="images/icons8-settings.svg"/></button>
                         </ul>
@@ -48,14 +48,11 @@
         <section id="home">
             <div class="hero-header" >
                 <div class="hero_text_container" data-aos="fade-right" data-aos-duration="1000">
-                    <h1>Hi there👋, call me <span>Dayo!</span></h1>
+                    <h1>Hi! call me <span>Dayo!</span></h1>
                     <p>I design and code beautifully simple things for the web, and I love what I do.❤<br>
                         I build accessible, inclusive and responsive digital experiences for the web that follows the mobile first approach.
                     </p>
                     <a href="#hireMe"><input type="button" value="Hire me!"/></a>
-                </div>
-                <div class="hero_img_container" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                    <img src="images/hero-dev-img.png" alt="hero image of developer"/>
                 </div>
             </div>
             
@@ -65,7 +62,7 @@
         
         <!-- ===== process and services section starts ===== -->
 
-        <section>
+        <!-- <section>
             <div class="service-container">
                 <div class="service_dev_container">
                     <h3>My Services</h3>
@@ -91,7 +88,7 @@
                 </div>
             </div>
             
-        </section>
+        </section> -->
         <!-- ===== process and services ends ===== -->
 
         
@@ -99,9 +96,8 @@
 
         <section id="about">
             <div class="about-container">
-                <hr style="float:left; margin-top:1rem">
-                <h3 class="about_header_text">About Me</h3>
-                <div class="about_me_container" data-aos="fade-right" data-aos-duration="1000">
+                <h3 class="about_header_text">&mdash; About Me</h3>
+                <div class="about_me_container">
                     <div class="profile_img_container">
                         <img src="images/profilephoto.jpg" alt="image of Muiz"/>
                     </div>
@@ -118,8 +114,12 @@
                         
                     </div>
                 </div>
-                <hr style="float:right; margin-top:1rem; height: .1rem;">
-                <h3 class="skill_header_text">My Skills</h3>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <div class="skill-container">
+                <h3 class="skill_header_text">My Skills &mdash;</h3>
                 <div class="skills_container" data-aos="fade-left" data-aos-duration="1000">
                     
                     <div class="dev_skills_container">
@@ -132,6 +132,7 @@
                                 <li><img class="dev_icon" src="images/icons8-react.svg" alt="reactjs icon"/></li>
                                 <li><img class="dev_icon" src="images/icons8-tailwindcss.svg" alt="tailwindcss icon"/></li>
                                 <li><img class="dev_icon" src="images/icons8-sass.svg" alt="sass icon"/></li>
+                                <li><img class="dev_icon" src="images/icons8-nextjs.svg" alt="nextjs icon"/></li>
                             </ul>
                         </div>
                         
@@ -147,28 +148,13 @@
                                 <li><img class="skills_icon" src="images/icons8-postgresql.svg" alt="postgresql icon"/></li>
                                 <li><img class="skills_icon" src="images/icons8-typescript-36.png" alt="typescript icon"/></li>
                                 <li><img class="skills_icon" src="images/icons8-office-365.svg" alt="office365 icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-figma.svg" alt="figma icon"/></li>
                             </ul>
                         </div>
 
                     </div>
-                    <div class="soft_skill_container">
-                        <h4>Soft skills</h4>
-                        <div class="soft_skills_list">
-                            <ul>
-                                <li>&spades;Commuication</li>
-                                <li>&spades;Team Player</li>
-                                <li>&spades;Problem Solver</li>
-                                <li>&spades;Critical Thinker</li>
-                                <li>&spades;Highly Organized</li>
-                                <li>&spades;Time Efficient</li>
-                                <li>&spades;Proactive</li>
-                                <li>&spades;Leadership</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
-            
         </section>
         <!-- ===== about me ends ===== -->
 
@@ -178,18 +164,22 @@
         <section id="portfolio">
             <div class="portfolio-container" data-aos="fade-down" data-aos-duration="1000">
                 <hr style="float:right; margin-top:2.2rem">
-                <h3>Portfolio</h3>
+                <h3>Portfolio &mdash;</h3>
                 <p>Here are a few designs I've worked on, feel free to <span><a href="#contact">ask me more!</a></span></p>
                 <div class="portfolio_projects">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <div class="btn-primary">
-                            <a target="_blank" href="#" class="btn">view live</a>
-                            <a target="_blank" href="#" class="btn"><img class="btn_img" src="images/icons8-github.svg"/></a>
-                        </div>
+                    <div class="flip-card">
+                        <div class="card">
+                            <div class="flip-card-front">
+                                <img src="images/Hand-coding-bro.svg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="flip-card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="btn-primary">
+                                    <a target="_blank" href="#" class="btn">view live</a>
+                                    <a target="_blank" href="#" class="btn"><img class="btn_img" src="images/icons8-github.svg"/></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -234,52 +224,53 @@
         
         <!-- ===== contact section starts ===== -->
 
-        <hr style="width:90%; margin-top:2rem;">
         <footer id="contact">
-            <div class="contact_footer_section">
-                <div class="social_connect_container">
-                    <h3>Connect with me&hearts;</h3>
+            <div class="contact-section">
+                <div class="contact-header">
+                    <h3>&mdash; Connect with me&hearts; &mdash;</h3>
                     <p>You're here, don't be shy now😎</p>
-                    <div class="social_connect_icons" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                        <div class="contact_icons" >
-                            <h4>Hit me up!</h4>
-                            <ul>
-                                <div><img src="images/icons8-phone-100.png" alt="phone icon"/><a href="tel:+2349036454103">+2349036454103</a></div>
-                                <div><img src="images/icons8-email-100.png" alt="email icon"/><a href="mailto:farayolajunior20@mail.com">@farayolajunior20@gmail.com</a></div>
-                                <div><img src="images/icons8-address-100.png" alt="location icon"/><a>FCT, Abuja. Nigeria.</a></div>
-                            </ul>
+                </div>
+                <div class="contact_footer_section">
+                    <div class="social_connect_container">
+                        <div class="social_connect_icons" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                            <div class="contact_icons" >
+                                <h4>Hit me up!</h4>
+                                <ul>
+                                    <div><img src="images/icons8-phone-100.png" alt="phone icon"/><a href="tel:+2349036454103">+2349036454103</a></div>
+                                    <div><img src="images/icons8-email-100.png" alt="email icon"/><a href="mailto:farayolajunior20@mail.com">@farayolajunior20@gmail.com</a></div>
+                                    <div><img src="images/icons8-address-100.png" alt="location icon"/><a>FCT, Abuja. Nigeria.</a></div>
+                                </ul>
+                            </div>
+                            <div class="social_icons">
+                                <h4>You can always find me here:&darr;</h4>
+                                <ul>
+                                    <li><a target="_blank" href="https://www.instagram.com/dayyyo.3"><img src="images/icons8-ig (1).svg" alt="instagram icon"/></a></li>
+                                    <li><a target="_blank" href="https://www.linkedin.com/in/abdulmuiz-farayola-8a8484224/"><img src="images/icons8-linkedin-img.png" alt="linkedin icon"/></a></li>
+                                    <li><a target="_blank" href="https://github.com/s8nclone"><img src="images/icons8-github (3).svg" alt="github icon"/></a></li>
+                                    <li><a target="_blank" href="https://twitter.com/middles8n"><img src="images/icons8-twitter-squared-100.png" alt="twitter icon"/></a></li>
+                                    <li><a target="_blank"><img src="images/icons8-behance.png" alt="behance icon"/></a></li>
+                                </ul>
+                            </div>
+                            
                         </div>
-                        <div class="social_icons">
-                            <h4>You can always find me here:&darr;</h4>
-                            <ul>
-                                <li><a target="_blank" href="https://www.instagram.com/dayyyo.3"><img src="images/icons8-ig (1).svg" alt="instagram icon"/></a></li>
-                                <li><a target="_blank" href="https://www.linkedin.com/in/abdulmuiz-farayola-8a8484224/"><img src="images/icons8-linkedin-img.png" alt="linkedin icon"/></a></li>
-                                <li><a target="_blank" href="https://github.com/s8nclone"><img src="images/icons8-github (3).svg" alt="github icon"/></a></li>
-                                <li><a target="_blank" href="https://twitter.com/middles8n"><img src="images/icons8-twitter-squared-100.png" alt="twitter icon"/></a></li>
-                                <li><a target="_blank"><img src="images/icons8-behance.png" alt="behance icon"/></a></li>
-                            </ul>
-                        </div>
-                        
-
                         
                     </div>
-                    
-                </div>
-                <div id="hireMe" class="message_me_container" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                    <h3>Have a project, design or freelance idea? I'm excited to hear about it!</h3>
-                    <p>&rarr;feel free to just say hi, I like that too!😉</p>
-                    <form id="contact-form">
-                        <div class="input_form">
-                            <input type="hidden" name="contact_number">
-                            <input type="text" placeholder="Name" name="user_name" id="userName" autofocus="true"/>
-                            <input type="email" placeholder="me@yourmail.com" name="user_email" id="userEmail"/> 
-                            <input type="text" placeholder="subject" name="subject" id="subject"/>
-                        
-                            <textarea placeholder="tell me more!" name="message" id="textarea"></textarea>
-                            <input class="submit_btn" type="submit" value="Submit" id="submit"/>
-                        </div>
-                        
-                    </form>
+                    <div id="hireMe" class="message_me_container">
+                        <h3>Have a project, design or freelance idea? I'm excited to hear about it!</h3>
+                        <p>&rarr;feel free to just say hi, I like that too!😉</p>
+                        <form id="contact-form">
+                            <div class="input_form">
+                                <input type="hidden" name="contact_number">
+                                <input type="text" placeholder="Name" name="user_name" id="userName"/>
+                                <input type="email" placeholder="me@yourmail.com" name="user_email" id="userEmail"/> 
+                                <input type="text" placeholder="subject" name="subject" id="subject"/>
+                            
+                                <textarea placeholder="tell me more!" name="message" id="textarea"></textarea>
+                                <input class="submit_btn" type="submit" value="Submit" id="submit"/>
+                            </div>
+                            
+                        </form>
+                    </div>
                 </div>
             </div>
             <p class="footer_text">Handcrafted by me &copy; twentyTwentyThree!</p>

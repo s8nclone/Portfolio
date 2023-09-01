@@ -31,7 +31,6 @@ html, body {
   padding-top: 0.5rem;
   font-size: 1.1rem;
   font-weight: bold;
-  min-width: 30%;
   margin-left: 0.5rem;
   letter-spacing: 1.2px;
 }
@@ -119,6 +118,16 @@ html, body {
   transform: translateX(25px);
   background-color: rgb(243, 243, 243);
 }
+@media screen and (min-width: 1024px) {
+  .top-nav .nav_link_btn .nav_menu {
+    justify-content: flex-end;
+    padding-inline: 2rem;
+  }
+  .top-nav .nav_link_btn .nav_menu li {
+    display: inline;
+    margin-left: 3rem;
+  }
+}
 .top-nav .nav_link_btn .nav_menu.active {
   right: 0;
 }
@@ -168,12 +177,9 @@ html, body {
     background-color: revert;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding-inline: 2rem;
   }
   .top-nav .nav_link_btn .nav_menu li {
     display: inline;
-    margin-left: 3rem;
   }
   .top-nav .nav_link_btn .nav_menu .fav {
     margin-left: 3rem;
@@ -271,9 +277,6 @@ html, body {
   position: relative;
 }
 @media screen and (min-width: 767px) {
-  .about-container {
-    height: 50vh;
-  }
   .about-container::after {
     margin: 0 18rem;
     content: "ABOUT";
@@ -283,13 +286,20 @@ html, body {
     font-family: "Super Donuts", sans-serif;
     color: rgba(187, 182, 182, 0.158);
     top: 15%;
+    left: -30%;
     z-index: -1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-container::after {
+    left: -5%;
   }
 }
 .about-container .about_header_text {
   float: right;
   font-size: 1.5rem;
   padding-right: 1rem;
+  position: relative;
 }
 .about-container .about_header_text::after {
   content: "ABOUT ME";
@@ -297,7 +307,7 @@ html, body {
   position: absolute;
   font-family: "Super Donuts", sans-serif;
   color: rgba(187, 182, 182, 0.158);
-  top: -3%;
+  top: -70%;
   right: 0;
   z-index: -1;
 }
@@ -306,7 +316,7 @@ html, body {
     padding-right: 5rem;
   }
   .about-container .about_header_text::after {
-    top: -8%;
+    top: -45%;
     right: 3%;
   }
 }
@@ -350,18 +360,19 @@ html, body {
   margin: 2rem auto 1rem;
   width: 100%;
   padding: 10px;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 @media screen and (min-width: 767px) {
   .about-container .about_me_container .about_me_text {
     padding: 30px;
     margin: 0;
     width: 45%;
+    font-size: 1.3rem;
   }
 }
 .about-container .about_me_container .about_me_text button {
   float: right;
-  margin: 2rem 1rem 1rem;
+  margin: 1rem auto;
   background-color: white;
   border-radius: 5px;
   padding: 5px;
@@ -374,6 +385,11 @@ html, body {
   transform: scale(1.2);
   transition: all 0.5s ease-in-out;
   background-color: #507564;
+}
+@media screen and (min-width: 767px) {
+  .about-container .about_me_container .about_me_text button {
+    margin: 2rem auto;
+  }
 }
 @media screen and (min-width: 767px) {
   .about-container .about_me_container {
@@ -501,6 +517,14 @@ html, body {
 }
 @media screen and (min-width: 767px) {
   .portfolio-container .portfolio_projects {
+    margin: 0 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .portfolio-container .portfolio_projects {
     margin: 0 0.5rem;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -574,7 +598,7 @@ html, body {
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 767px) {
   .portfolio-container {
     margin: 1rem 5rem;
   }

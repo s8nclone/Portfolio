@@ -41,13 +41,10 @@ html, body {
     justify-content: space-between;
     align-items: center;
 
-    
-
     .nav_home_btn {
         padding-top: .5rem;
         font-size: 1.1rem;
         font-weight: bold;
-        min-width: 30%;
         margin-left: .5rem;
         letter-spacing: 1.2px;
 
@@ -149,12 +146,21 @@ html, body {
                     background-color: $white;
                 }
             }
-            
-        }
 
+            
+            @media screen and (min-width: 1024px){
+                justify-content: flex-end;
+                padding-inline: 2rem;
+
+                li {
+                    display: inline;
+                    margin-left: 3rem;
+                }
+            }
+        }
         .nav_menu.active{
             right: 0;
-          }
+        }
     }
 }
 
@@ -207,12 +213,9 @@ html, body {
                 background-color: revert;
                 display: flex;
                 align-items: center;
-                justify-content: flex-end;
-                padding-inline: 2rem;
 
                 li {
                     display: inline;
-                    margin-left: 3rem;
                 }
 
                 .fav {
@@ -415,7 +418,6 @@ html, body {
     position: relative;
 
     @media screen and (min-width:767px) {
-        height: 50vh;
         &::after {
             margin: 0 18rem;
             content: "ABOUT";
@@ -425,7 +427,14 @@ html, body {
             font-family: 'Super Donuts', sans-serif;
             color: rgba(187, 182, 182, 0.158);
             top: 15%;
+            left: -30%;
             z-index: -1;
+        }
+    }
+
+    @media screen and (min-width:1024px) {
+        &::after {
+            left: -5%;
         }
     }
     
@@ -433,6 +442,7 @@ html, body {
         float: right;
         font-size: 1.5rem;
         padding-right:1rem;
+        position: relative;
 
         &::after {
             content: "ABOUT ME";
@@ -440,7 +450,7 @@ html, body {
             position: absolute;
             font-family: 'Super Donuts', sans-serif;
             color: rgba(187, 182, 182, 0.158);
-            top:-3%;
+            top:-70%;
             right: 0;
             z-index: -1;
         }
@@ -449,7 +459,7 @@ html, body {
             padding-right: 5rem;
 
             &::after {
-                top: -8%;
+                top: -45%;
                 right: 3%;
             }
         }
@@ -495,18 +505,20 @@ html, body {
             margin: 2rem auto 1rem;
             width: 100%;
             padding: 10px;
-            font-size: 1.3rem;
+            font-size: 1rem;
 
             @media screen and (min-width:767px) {
                 padding: 30px;
                 margin: 0;
                 width: 45%;
+                font-size: 1.3rem;
+
             }
 
 
             button {
                 float: right;
-                margin: 2rem 1rem 1rem;
+                margin: 1rem auto;
                 background-color: $whiter;
                 border-radius: 5px;
                 padding: 5px;
@@ -519,6 +531,11 @@ html, body {
                     transform: scale(1.2);
                     transition: all .5s ease-in-out;
                     background-color: $primary;
+                }
+
+                @media screen and (min-width:767px) {
+                    margin: 2rem auto;
+    
                 }
             }
         }
@@ -668,6 +685,13 @@ html, body {
 
 
         @media screen and (min-width:767px){
+            margin: 0 5rem;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (min-width:1024px){
             margin: 0 .5rem;
             grid-template-columns: repeat(4, 1fr);
         }
@@ -762,7 +786,7 @@ html, body {
     }
     
 
-    @media screen and (min-width:900px) {
+    @media screen and (min-width:767px) {
         margin: 1rem 5rem;
     }
 }

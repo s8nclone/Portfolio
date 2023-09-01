@@ -9,6 +9,7 @@ $base-color: #0a946a;
 $white: rgb(243, 243, 243);
 $whiter: white;
 $primary: #507564;
+$primary-bgd: #03503e52;
 
 
 * {
@@ -20,12 +21,10 @@ $primary: #507564;
 
 html, body {
     font-family: 'Montserrat', sans-serif;
-    
     color: black;
-    
-    // background-color: $whiter;
     overflow-x: clip;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 /*<===== header section starts =====>*/
@@ -33,7 +32,7 @@ html, body {
 .container {
     max-width: 1440px;
     width: 100%;
-    background-color: #03503e52;
+    background-color: $primary-bgd;
     
 }
 
@@ -72,7 +71,6 @@ html, body {
         .nav_menu {
             position: fixed;
             top: 3rem;
-            flex-direction: column;
             background-color: $white;
             color: #000;
             width: 50%;
@@ -81,6 +79,7 @@ html, body {
             transition: 0.3s;
             padding: 5px;
             margin-right: .5rem;
+            z-index: 9999;
 
             li {
                 font-size: 1rem;
@@ -96,23 +95,62 @@ html, body {
                 }
 
                 .nav_link:hover {
-                    text-decoration: underline $primary;
+                    text-decoration: underline 2px $primary;
                 }
             }
 
-            .nav_mode_btn {
-                background: none;
-                border: none;
-                cursor:pointer;
-                color: $base-color;
+            .fav {
+                position: relative;
+                display: inline-block;
+                width: 45px;
+                height: 20px;
+                vertical-align: middle;
+                
+                input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+            
+                .switch {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color:$primary-bgd;
+                    transition: 0.4s;
+                    border-radius: 25px;
+                    
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        height: 18px;
+                        width: 18px;
+                        left: 1px;
+                        bottom: 1px;
+                        background-color: $primary;
+                        transition: 0.4s;
+                        border-radius: 50%;
+                    }
+                }
 
-                img {
-                    max-width: 1.5rem;
-                    max-height: 1.5rem;
+                input:checked + .switch {
+                    background-color: $primary;
+                }
+                
+                input:focus + .switch {
+                    box-shadow: 0 0 1px #51b5b1;
+                }
+                
+                input:checked + .switch:before {
+                    transform: translateX(25px);
+                    background-color: $white;
                 }
             }
+            
         }
-
 
         .nav_menu.active{
             right: 0;
@@ -167,15 +205,24 @@ html, body {
                 position: revert;
                 width: 100%;
                 background-color: revert;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-inline: 2rem;
 
                 li {
                     display: inline;
                     margin-left: 3rem;
                 }
 
-                .nav_mode_btn {
-                    width: 3rem;
+                .fav {
+                    margin-left: 3rem;
+
+                    .switch {    
+                        background-color:$white;
+                    }
                 }
+                
             }
         }
     }
@@ -187,7 +234,7 @@ html, body {
 
 /*<===== hero section starts =====>*/
 #home {
-    background-color: #03503e52;
+    background-color: $primary-bgd;
 }
 .hero-header {
     padding: 2rem .5rem;
@@ -225,7 +272,7 @@ html, body {
         }
 
         input {
-            margin-top: 10px;
+            margin: 10px 0 0 10px;
             font-size: 1.3rem;
             width: 10rem;
             background-color: $white;
@@ -368,6 +415,7 @@ html, body {
     position: relative;
 
     @media screen and (min-width:767px) {
+        height: 50vh;
         &::after {
             margin: 0 18rem;
             content: "ABOUT";
@@ -376,7 +424,7 @@ html, body {
             letter-spacing: 2rem;
             font-family: 'Super Donuts', sans-serif;
             color: rgba(187, 182, 182, 0.158);
-            top: 0;
+            top: 15%;
             z-index: -1;
         }
     }
@@ -386,8 +434,24 @@ html, body {
         font-size: 1.5rem;
         padding-right:1rem;
 
+        &::after {
+            content: "ABOUT ME";
+            font-size: 2.5rem;
+            position: absolute;
+            font-family: 'Super Donuts', sans-serif;
+            color: rgba(187, 182, 182, 0.158);
+            top:-3%;
+            right: 0;
+            z-index: -1;
+        }
+
         @media screen and (min-width:767px) {
             padding-right: 5rem;
+
+            &::after {
+                top: -8%;
+                right: 3%;
+            }
         }
     }
 
@@ -410,14 +474,14 @@ html, body {
                 background-color: $whiter;
 
                 @media screen and (min-width:767px) {
-                    max-height: 10rem;
-                    max-width: 10rem;
+                    max-height: 15rem;
+                    max-width: 15rem;
                     border-radius: 10px;
                 }
             }
 
             @media screen and (min-width:767px) {
-                width: 30%;
+                width: 40%;
                 min-height: 11rem;
                 border-radius: 10px;
                 display: flex;
@@ -431,39 +495,39 @@ html, body {
             margin: 2rem auto 1rem;
             width: 100%;
             padding: 10px;
+            font-size: 1.3rem;
 
             @media screen and (min-width:767px) {
                 padding: 30px;
                 margin: 0;
+                width: 45%;
             }
 
 
             button {
                 float: right;
-                margin: 1rem;
-                background-color: $primary;
-                color: $white;
+                margin: 2rem 1rem 1rem;
+                background-color: $whiter;
                 border-radius: 5px;
                 padding: 5px;
-                border: none;
+                border: 1px solid $primary;
                 cursor: pointer;
                 height: 2rem;
                 width: 10rem;
 
-                @media screen and (max-width:465px) {
-                    // margin-top: 20px;
-                }
-
-                // @media screen and (min-width:767px) {
-                //     margin: 20px;
-                // }
-
                 &:hover {
                     transform: scale(1.2);
-                    transition: all 1s ease-in-out;
+                    transition: all .5s ease-in-out;
+                    background-color: $primary;
                 }
             }
         }
+
+        @media screen and (min-width:767px) {
+            display: flex;
+            align-items: center;
+        }
+
     }
 }
 /*<===== about me ends =====>*/
@@ -479,6 +543,18 @@ html, body {
         margin-left: 1rem;
         font-size: 1.5rem;
         padding-top: 1rem;
+        position: relative;
+
+        &::after {
+            content: "SKILLS";
+            font-size: 2.5rem;
+            position: absolute;
+            font-family: 'Super Donuts', sans-serif;
+            color: rgba(187, 182, 182, 0.158);
+            top: 8%;
+            left: 1%;
+            z-index: -1;
+        }
 
         @media screen and (min-width:767px) {
             margin-left: 5rem;
@@ -551,10 +627,22 @@ html, body {
 .portfolio-container {
     font-size: 1.5rem;
     letter-spacing: .15rem;
-    margin: 3rem 0;
+    margin: 2rem 0;
 
-    h3 {
+    .portfolio-header {
         padding: 1rem;
+        position: relative;
+
+        &::after {
+            content: "PORTFOLIO";
+            font-size: 2.5rem;
+            position: absolute;
+            font-family: 'Super Donuts', sans-serif;
+            color: rgba(187, 182, 182, 0.158);
+            top: 8%;
+            left: 1%;
+            z-index: -1;
+        }
     }
 
     p {
@@ -571,28 +659,27 @@ html, body {
             }
         }
     }
-    
-
 
     .portfolio_projects {
         display: grid;
-        grid-template-columns: auto auto;
-        min-height: 12rem;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        gap: 1rem;
+
 
         @media screen and (min-width:767px){
             margin: 0 .5rem;
             grid-template-columns: repeat(4, 1fr);
-            gap: 1rem;
         }
     }
 
     .flip-card {
         background-color: transparent;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         perspective: 1000px;
     
-        .flip-card:hover .card-inner {
+        &:hover .card-inner {
             transform: rotateX(180deg);
         }
 
@@ -604,8 +691,10 @@ html, body {
             transition: transform 0.5s ease-in;
             transform-style: preserve-3d;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border-radius: 1rem;
 
-            .flip-card-front, .flip-card-body {
+            .flip-card-front,
+            .flip-card-body {
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -613,59 +702,60 @@ html, body {
             }
 
             .flip-card-front {
-                background-color: #bbb;
-                color: black;
 
                 .card-img-top {
-                    max-height: 300px;
-                    max-width: 300px;
+                    max-height: 250px;
+                    max-width: 250px;
                 }
             }
 
             .flip-card-body {
                 background-color:#507564;
-                color: white;
-                transform: rotateX(180deg);   
-                display: flex;
-                flex-direction: column;
-                margin: 5px;
-                justify-content: center;
-                padding: 5px;
-                border:1px solid $primary;
+                color: $white;
+                transform: rotateX(180deg);
+                font-size: 1rem;
+                padding: 15% 0;
+                border-radius: 1rem;
+
                 .btn-primary {
                     display: flex;
                     padding: 2px;
                     margin: 3px;
-                    flex-direction: column;
                     justify-content: space-between;
-                    gap: 10px;
-
-                    @media screen and (min-width:767px){
-                        flex-direction: row;
-                        justify-content: space-between;
-                    }
 
                     .btn {
-                        background-color: $primary;
-                        text-decoration: none;
-                        color: $white;
-                        border-radius: 10px;
-                        font-size: 1.5rem;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
+                        border-radius: .5rem;
+                        font-size: 1rem;
+                        border: none;
+                        width: 6rem;
+                        margin-inline: 1rem;
 
-                        @media screen and (min-width:767px){
-                            width: 50%;
+
+                        a {
+                            color: #000;
+                            text-decoration: none;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            .btn_img {
+                                max-width: 30px;
+                                max-height: 30px;
+                            }
+                        }
+                        
+
+                        &:hover {
+                            background-color: transparent;
+                            border: 1px solid $white;
+                            outline: none;
+                            transform: scale(1.1);
+                            transition: all .2s ease-in-out;
                         }
                     }
-
-                    .btn_img {
-                        max-width: 30px;
-                        max-height: 30px;
-                    }
                 }
+
+                    
             }
             
         }
@@ -681,7 +771,7 @@ html, body {
 
 /*<===== footer section starts =====>*/
 #contact {
-    background-color: #03503e52;
+    background-color: $primary-bgd;
 }
 
 .contact-section {
@@ -705,7 +795,7 @@ html, body {
             position: absolute;
             font-family: 'Super Donuts', sans-serif;
             color: rgba(187, 182, 182, 0.158);
-            top: 20%;
+            top: 5%;
             left: 15%;
             z-index: -1;
 
@@ -837,24 +927,28 @@ html, body {
                     input {
                         min-height: 1.5rem;
                         margin: 3px;
-                        border: 1px solid $base-color;
+                        // border: 1px solid $base-color;
+                        border: none;
                         border-radius: 5px;
                         padding: 5px;
+                        outline: none;
 
                     }
                     
                     textarea {
                         min-height: 5rem;
                         margin: 3px;
-                        border: 1px solid $base-color;
+                        border: none;
                         border-radius: 5px;
                         padding: 5px;
+                        outline: none;
 
                     }
 
                     .submit_btn {
                         background-color: $primary;
                         color: $white;
+                        border: none;
                     }
 
                     
@@ -867,15 +961,28 @@ html, body {
     }
 }
 
-
 .footer_text {
-        // background-color: $primary;
-        // color: $white;
-        text-align: center;
-        font-size: 1rem;
-        letter-spacing: .3rem;
-        font-weight: 600;
-    }
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: .3rem;
+    font-weight: 600;
+}
 
+.to-top {
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+    z-index: 999;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: $primary;
+
+    img {
+        width: 3rem;
+        height: 3rem;
+    }
+}
 
 @import 'darkmode';

@@ -1,10 +1,14 @@
 body.dark-mode {
     background-color: $dark-base-color;
 
+
     #home,
     #about,
     #portfolio,
     #contact,
+    #header,
+    #skills,
+    .container,
     .service-container
     {
         div, h2, p, li, a, span{
@@ -15,15 +19,32 @@ body.dark-mode {
             color: $dark-white;
         }
 
-        .portfolio_projects{
-            a {
+        input[type=button],
+        .download-cv {
+            &:hover {
                 background-color: $dark-white;
+                color: #000;
             }
         }
 
-        hr {
-            background-color: $dark-whiter;
+        // background-color: revert;
+        .flip-card-body,
+        .flip-card-front {
+            // background-color: $white;
         }
+
+        .submit_btn {
+            background-color: $dark-white;
+            color: #000;
+        }
+
+        .nav_link:hover {
+            text-decoration: underline 2px $dark-white;
+        }
+    }
+
+    .to-top {
+        background-color: $base-color;
     }
     
 }

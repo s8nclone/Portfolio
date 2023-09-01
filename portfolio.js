@@ -37,7 +37,7 @@ document.querySelectorAll(".nav_link").forEach(n => n.addEventListener("click", 
 
 // JavaScript code to toggle dark mode
 const body = document.querySelector('body');
-const toggleButton = document.getElementById('dark-mode-btn');
+const toggleButton = document.getElementById('dark-toggle');
 const darkModeEnabled = localStorage.getItem('darkModeEnabled');
 
 // Function to enable dark mode
@@ -58,11 +58,11 @@ if (darkModeEnabled === 'true') {
 }
 
 // Toggle dark mode when the button is clicked
-toggleButton.addEventListener('click', function() {
-  if (body.classList.contains('dark-mode')) {
-    disableDarkMode();
-  } else {
+toggleButton.addEventListener('click', function(e) {
+  if (e.target.checked) {
     enableDarkMode();
+  } else {
+    disableDarkMode();
   }
 });
 

@@ -82,7 +82,7 @@ html, body {
                 font-size: 1rem;
                 display: block;
                 padding: 5px;
-                font-weight: 800;
+                font-weight: 600;
                 letter-spacing: 2px;
 
                 .nav_link {
@@ -241,10 +241,10 @@ html, body {
 }
 .hero-header {
     padding: 2rem .5rem;
-    height: 30rem;
+    height: 32rem;
     background-image: url(/images/Hand-coding-cuate.svg);
     background-repeat: no-repeat;
-    background-position: 50% 90%;
+    background-position: 50% 85%;
 
 
     @media screen and (min-width:767px) {
@@ -267,17 +267,16 @@ html, body {
         }
 
         p {
-            font-size: 1rem;
-            font-weight: 500;
-            letter-spacing: .08rem;
+            font-size: 1.2rem;
+            font-weight: 400;
             color: #000;
             margin: 1rem 0;
         }
 
-        input {
+        .download-cv {
             margin: 10px 0 0 10px;
-            font-size: 1.3rem;
-            width: 10rem;
+            font-size: 1.1rem;
+            width: 12rem;
             background-color: $white;
             border: none;
             padding: 10px;
@@ -301,7 +300,7 @@ html, body {
             align-items: flex-start;
             min-height: 13rem;
             margin-left: 5rem; 
-            width: 50%;
+            width: 40%;
             color: #000;
 
 
@@ -414,7 +413,6 @@ html, body {
 .about-container {
     margin: 2rem auto;
     font-size: 1.5rem;
-    letter-spacing: .15rem;
     position: relative;
 
     @media screen and (min-width:767px) {
@@ -516,28 +514,28 @@ html, body {
             }
 
 
-            button {
-                float: right;
-                margin: 1rem auto;
-                background-color: $whiter;
-                border-radius: 5px;
-                padding: 5px;
-                border: 1px solid $primary;
-                cursor: pointer;
-                height: 2rem;
-                width: 10rem;
+            // button {
+            //     float: right;
+            //     margin: 1rem auto;
+            //     background-color: $whiter;
+            //     border-radius: 5px;
+            //     padding: 5px;
+            //     border: 1px solid $primary;
+            //     cursor: pointer;
+            //     height: 2rem;
+            //     width: 10rem;
 
-                &:hover {
-                    transform: scale(1.2);
-                    transition: all .5s ease-in-out;
-                    background-color: $primary;
-                }
+            //     &:hover {
+            //         transform: scale(1.2);
+            //         transition: all .5s ease-in-out;
+            //         background-color: $primary;
+            //     }
 
-                @media screen and (min-width:767px) {
-                    margin: 2rem auto;
+            //     @media screen and (min-width:767px) {
+            //         margin: 1rem auto;
     
-                }
-            }
+            //     }
+            // }
         }
 
         @media screen and (min-width:767px) {
@@ -988,8 +986,12 @@ html, body {
 .footer_text {
     text-align: center;
     font-size: 1rem;
-    letter-spacing: .3rem;
     font-weight: 600;
+
+    .rights-link {
+        text-decoration: none;
+        color: $white;
+    }
 }
 
 .to-top {

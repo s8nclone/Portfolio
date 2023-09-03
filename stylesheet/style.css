@@ -63,7 +63,7 @@ html, body {
   font-size: 1rem;
   display: block;
   padding: 5px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 .top-nav .nav_link_btn .nav_menu li .nav_link {
@@ -196,10 +196,10 @@ html, body {
 
 .hero-header {
   padding: 2rem 0.5rem;
-  height: 30rem;
+  height: 32rem;
   background-image: url(/images/Hand-coding-cuate.svg);
   background-repeat: no-repeat;
-  background-position: 50% 90%;
+  background-position: 50% 85%;
 }
 @media screen and (min-width: 767px) {
   .hero-header {
@@ -219,23 +219,22 @@ html, body {
   color: #507564;
 }
 .hero-header .hero_text_container p {
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 0.08rem;
+  font-size: 1.2rem;
+  font-weight: 400;
   color: #000;
   margin: 1rem 0;
 }
-.hero-header .hero_text_container input {
+.hero-header .hero_text_container .download-cv {
   margin: 10px 0 0 10px;
-  font-size: 1.3rem;
-  width: 10rem;
+  font-size: 1.1rem;
+  width: 12rem;
   background-color: rgb(243, 243, 243);
   border: none;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
 }
-.hero-header .hero_text_container input:hover {
+.hero-header .hero_text_container .download-cv:hover {
   background-color: #507564;
   color: rgb(243, 243, 243);
   transition: all 0.5s ease-in-out;
@@ -251,7 +250,7 @@ html, body {
     align-items: flex-start;
     min-height: 13rem;
     margin-left: 5rem;
-    width: 50%;
+    width: 40%;
     color: #000;
   }
   .hero-header .hero_text_container h1 {
@@ -273,7 +272,6 @@ html, body {
 .about-container {
   margin: 2rem auto;
   font-size: 1.5rem;
-  letter-spacing: 0.15rem;
   position: relative;
 }
 @media screen and (min-width: 767px) {
@@ -368,27 +366,6 @@ html, body {
     margin: 0;
     width: 45%;
     font-size: 1.3rem;
-  }
-}
-.about-container .about_me_container .about_me_text button {
-  float: right;
-  margin: 1rem auto;
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px;
-  border: 1px solid #507564;
-  cursor: pointer;
-  height: 2rem;
-  width: 10rem;
-}
-.about-container .about_me_container .about_me_text button:hover {
-  transform: scale(1.2);
-  transition: all 0.5s ease-in-out;
-  background-color: #507564;
-}
-@media screen and (min-width: 767px) {
-  .about-container .about_me_container .about_me_text button {
-    margin: 2rem auto;
   }
 }
 @media screen and (min-width: 767px) {
@@ -753,8 +730,11 @@ html, body {
 .footer_text {
   text-align: center;
   font-size: 1rem;
-  letter-spacing: 0.3rem;
   font-weight: 600;
+}
+.footer_text .rights-link {
+  text-decoration: none;
+  color: rgb(243, 243, 243);
 }
 
 .to-top {
@@ -894,6 +874,9 @@ body.dark-mode .service-container .nav_link:hover {
 }
 body.dark-mode .to-top {
   background-color: #0a946a;
+}
+body.dark-mode .footer_text .rights-link {
+  color: rgb(243, 243, 243);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -196,17 +196,16 @@ html, body {
 
 .hero-header {
   padding: 2rem 0.5rem;
-  height: 32rem;
+  height: 35rem;
   background-image: url(/images/Hand-coding-cuate.svg);
   background-repeat: no-repeat;
-  background-position: 50% 85%;
+  background-position: 50% 90%;
 }
 @media screen and (min-width: 767px) {
   .hero-header {
     background-image: url(/images/Hand-coding-pana.svg);
     display: flex;
     justify-content: space-between;
-    height: 35rem;
     background-position: 80% 50%;
     background-size: 35rem;
   }
@@ -261,7 +260,7 @@ html, body {
   }
   .hero-header .hero_text_container p {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
@@ -459,7 +458,6 @@ html, body {
 /*<===== portfolio section starts =====>*/
 .portfolio-container {
   font-size: 1.5rem;
-  letter-spacing: 0.15rem;
   margin: 2rem 0;
 }
 .portfolio-container .portfolio-header {
@@ -480,17 +478,18 @@ html, body {
   padding: 5px;
 }
 .portfolio-container p span a {
-  color: #0a946a;
+  color: #507564;
   text-decoration: none;
 }
 .portfolio-container p span a:hover {
-  color: #507564;
+  color: rgba(3, 80, 62, 0.3215686275);
 }
 .portfolio-container .portfolio_projects {
   display: grid;
   grid-template-rows: auto auto;
   justify-content: center;
   gap: 1rem;
+  padding: 1rem 0;
 }
 @media screen and (min-width: 767px) {
   .portfolio-container .portfolio_projects {
@@ -532,9 +531,14 @@ html, body {
   height: 100%;
   backface-visibility: hidden;
 }
+.portfolio-container .flip-card .card-inner .flip-card-front {
+  border-radius: 1rem;
+}
 .portfolio-container .flip-card .card-inner .flip-card-front .card-img-top {
-  max-height: 250px;
-  max-width: 250px;
+  height: 250px;
+  width: 250px;
+  border-radius: inherit;
+  object-fit: cover;
 }
 .portfolio-container .flip-card .card-inner .flip-card-body {
   background-color: #507564;
@@ -635,7 +639,7 @@ html, body {
   }
 }
 .contact-section .contact_footer_section p {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .contact-section .contact_footer_section .social_connect_container .social_connect_icons {
   text-align: center;
@@ -661,6 +665,7 @@ html, body {
 .contact-section .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul a {
   text-decoration: none;
   color: black;
+  font-size: 0.8rem;
 }
 .contact-section .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul a:hover {
   color: #507564;
@@ -668,7 +673,7 @@ html, body {
 @media screen and (min-width: 767px) {
   .contact-section .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul a {
     padding: 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 .contact-section .contact_footer_section .social_connect_container .social_connect_icons .social_icons {
@@ -698,7 +703,7 @@ html, body {
   }
 }
 .contact-section .contact_footer_section .message_me_container h3 {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .contact-section .contact_footer_section .message_me_container form .input_form {
   display: flex;
@@ -729,8 +734,8 @@ html, body {
 
 .footer_text {
   text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 .footer_text .rights-link {
   text-decoration: none;

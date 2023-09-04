@@ -241,17 +241,16 @@ html, body {
 }
 .hero-header {
     padding: 2rem .5rem;
-    height: 32rem;
+    height: 35rem;
     background-image: url(/images/Hand-coding-cuate.svg);
     background-repeat: no-repeat;
-    background-position: 50% 85%;
+    background-position: 50% 90%;
 
 
     @media screen and (min-width:767px) {
         background-image: url(/images/Hand-coding-pana.svg);
         display: flex;
         justify-content: space-between;
-        height: 35rem;
         background-position: 80% 50% ;
         background-size: 35rem;
     }
@@ -314,7 +313,7 @@ html, body {
 
             p {
                 font-size: 1.5rem;
-                font-weight: 600;
+                font-weight: 500;
             }
             
         }
@@ -641,7 +640,6 @@ html, body {
 
 .portfolio-container {
     font-size: 1.5rem;
-    letter-spacing: .15rem;
     margin: 2rem 0;
 
     .portfolio-header {
@@ -665,11 +663,11 @@ html, body {
         
         span {
             a {
-                color: $base-color;
+                color: $primary;
                 text-decoration: none;
 
                 &:hover {
-                    color: $primary;
+                    color: $primary-bgd;
                 }
             }
         }
@@ -680,6 +678,7 @@ html, body {
         grid-template-rows: auto auto;
         justify-content: center;
         gap: 1rem;
+        padding: 1rem 0;
 
 
         @media screen and (min-width:767px){
@@ -724,10 +723,13 @@ html, body {
             }
 
             .flip-card-front {
+                border-radius: 1rem;
 
                 .card-img-top {
-                    max-height: 250px;
-                    max-width: 250px;
+                    height: 250px;
+                    width: 250px;
+                    border-radius: inherit;
+                    object-fit: cover;
                 }
             }
 
@@ -846,7 +848,7 @@ html, body {
         }
 
         p {
-            font-size: 1rem;
+            font-size: .8rem;
         }
 
         .social_connect_container {
@@ -879,6 +881,7 @@ html, body {
                         a {
                             text-decoration: none;
                             color: black;
+                            font-size: .8rem;
 
                             &:hover {
                                 color: $primary;
@@ -886,7 +889,7 @@ html, body {
 
                             @media screen and (min-width:767px) {
                                 padding: 5px;
-                                font-size: 1.2rem;
+                                font-size: 1rem;
                             }
                         }
                     } 
@@ -926,7 +929,7 @@ html, body {
             padding: 5px;
             display: flex;
             flex-direction: column;
-            width:20rem;
+            width: 20rem;
 
             @media screen and (min-width:767px) {
                 width: 40%;
@@ -934,7 +937,7 @@ html, body {
             }
             
             h3 {
-                font-size: 1.3rem;
+                font-size: 1rem;
             }
                 
 
@@ -949,7 +952,6 @@ html, body {
                     input {
                         min-height: 1.5rem;
                         margin: 3px;
-                        // border: 1px solid $base-color;
                         border: none;
                         border-radius: 5px;
                         padding: 5px;
@@ -985,8 +987,8 @@ html, body {
 
 .footer_text {
     text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: .8rem;
+    font-weight: 500;
 
     .rights-link {
         text-decoration: none;

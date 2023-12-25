@@ -251,7 +251,7 @@ html, body {
         background-image: url(/images/Hand-coding-pana.svg);
         display: flex;
         justify-content: space-between;
-        background-position: 80% 50% ;
+        background-position: 90% 50% ;
         background-size: 35rem;
     }
 
@@ -627,10 +627,6 @@ html, body {
         height: 250px;
         perspective: 1000px;
 
-        @media screen and (min-width:1024px) {
-            width: 30rem;
-            height: 25rem;
-        }
     
         &:hover .card-inner {
             transform: rotateX(180deg);
@@ -699,6 +695,7 @@ html, body {
                             .btn_img {
                                 max-width: 30px;
                                 max-height: 30px;
+
                             }
                         }
                         
@@ -709,28 +706,107 @@ html, body {
                             outline: none;
                             transform: scale(1.1);
                             transition: all .2s ease-in-out;
+
+                            a {
+                                color: $white;
+                            }
                         }
 
-                        @media screen and (min-width:1024px) {
-                            width: 40%;
-                            height: 3rem;
-                        }
                     }
 
                 }
                 
-                @media screen and (min-width:1024px) {
-                   .card-title {
-                        font-size: 3rem;
-                   }
-
-                   .card-text {
-                        font-size: 1.5rem;
-                   }
-                }
-                    
+                
             }
             
+        }
+
+        @media screen and (min-width: 767px){
+            width: 22rem;
+            height: 22rem;
+
+            &:hover .card-inner {
+                transform: none;
+            }
+
+            .card-inner {
+                // border: 1px solid $base-color;
+                display: block;
+                .flip-card-front,
+                .flip-card-body {
+                    position: static;
+                }
+                .flip-card-front {
+                    height: 12rem;
+                }
+
+                .flip-card-body {
+                    height: 10rem;
+                    transform: none;
+                    border-radius: 0;
+                    padding: 1rem;
+                    text-align: left;
+                    border-bottom-left-radius: inherit;
+                    border-bottom-right-radius: inherit;
+                    
+    
+
+                    .btn-primary {
+                        padding: 0;
+                        .btn {
+                            width: 40%;
+                            // height: 3rem;
+                            margin-inline: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width:1024px) {
+            width: 30rem;
+            height: 25rem;
+
+            &:hover .card-inner {
+                transform: none;
+            }
+
+            .card-inner {
+                // border: 1px solid $base-color;
+                display: block;
+                .flip-card-front,
+                .flip-card-body {
+                    position: static;
+                }
+                .flip-card-front {
+                    height: 15rem;
+                }
+
+                .flip-card-body {
+                    height: 10rem;
+                    transform: none;
+                    border-radius: 0;
+                    padding: 1rem;
+                    text-align: left;
+                    border-bottom-left-radius: inherit;
+                    border-bottom-right-radius: inherit;
+                    
+                    .card-title {
+                        font-size: 1.5rem;    
+                    }
+
+                    .btn-primary {
+                        padding: 0;
+                        .btn {
+                            width: 40%;
+                            height: 3rem;
+                            margin-inline: 0;
+                        }
+                    }
+                }
+            }
+
+
         }
     }
     

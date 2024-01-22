@@ -232,11 +232,11 @@ html, body {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 .hero-header .hero_text_container .download-cv:hover {
   background-color: #507564;
   color: rgb(243, 243, 243);
-  transition: all 0.5s ease-in-out;
   transform: scale(1.1);
   border: none;
   outline: none;
@@ -640,6 +640,15 @@ html, body {
   }
   .portfolio-container .flip-card .card-inner .flip-card-front {
     height: 15rem;
+    overflow: hidden;
+  }
+  .portfolio-container .flip-card .card-inner .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+  }
+  .portfolio-container .flip-card .card-inner .flip-card-front img:hover {
+    transform: scale(1.1);
   }
   .portfolio-container .flip-card .card-inner .flip-card-body {
     height: 10rem;
@@ -765,12 +774,13 @@ html, body {
 .contact-section .contact_footer_section .social_connect_container .social_connect_icons .social_icons ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .contact-section .contact_footer_section .social_connect_container .social_connect_icons .social_icons ul li a {
   cursor: pointer;
 }
 .contact-section .contact_footer_section .social_connect_container .social_connect_icons .social_icons ul li:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 .contact-section .contact_footer_section .message_me_container {
   margin-bottom: 1rem;
@@ -960,11 +970,18 @@ body.dark-mode .container .nav_link:hover,
 body.dark-mode .service-container .nav_link:hover {
   text-decoration: underline 2px rgb(243, 243, 243);
 }
+body.dark-mode #home .footer_text .rights-link,
+body.dark-mode #about .footer_text .rights-link,
+body.dark-mode #portfolio .footer_text .rights-link,
+body.dark-mode #contact .footer_text .rights-link,
+body.dark-mode #header .footer_text .rights-link,
+body.dark-mode #skills .footer_text .rights-link,
+body.dark-mode .container .footer_text .rights-link,
+body.dark-mode .service-container .footer_text .rights-link {
+  color: rgb(243, 243, 243);
+}
 body.dark-mode .to-top {
   background-color: #0a946a;
-}
-body.dark-mode .footer_text .rights-link {
-  color: rgb(243, 243, 243);
 }
 
 /*# sourceMappingURL=style.css.map */

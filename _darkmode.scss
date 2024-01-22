@@ -27,11 +27,6 @@ body.dark-mode {
             }
         }
 
-        // background-color: revert;
-        .flip-card-body,
-        .flip-card-front {
-            // background-color: $white;
-        }
 
         .submit_btn {
             background-color: $dark-white;
@@ -41,15 +36,16 @@ body.dark-mode {
         .nav_link:hover {
             text-decoration: underline 2px $dark-white;
         }
+        
+        .footer_text {
+            .rights-link {
+                color: $dark-white;
+            }
+        }
     }
-
+    
     .to-top {
         background-color: $base-color;
     }
-    
-    .footer_text {
-        .rights-link {
-            color: $dark-white;
-        }
-    }
+
 }

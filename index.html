@@ -23,8 +23,8 @@
                     </div>
                     <div class="nav_link_btn">
                         <ul class="nav_menu">
+                            <li><a href="#portfolio" class="nav_link">Works</a></li>
                             <li><a href="#about" class="nav_link">About</a></li>
-                            <li><a href="#portfolio" class="nav_link">Work</a></li>
                             <li><a href="#contact" class="nav_link">Contact</a></li>
 
                             <label class="fav">
@@ -49,7 +49,7 @@
         <section id="home">
             <div class="hero-header" >
                 <div class="hero_text_container" data-aos="fade-right" data-aos-duration="1000">
-                    <h1>Hi! call me <span>Dayo!</span></h1>
+                    <h1>Hi! call me <span class="typing_span">Dayo!</span></h1>
                     <p>I design and code beautifully simple things for the web, and I love what I do.❤<br>
                         I build accessible, inclusive and responsive digital experiences that helps users navigate the web seamlessly.
                     </p>
@@ -66,8 +66,8 @@
         
         <!-- ===== portfolio section starts ===== -->
         <section id="portfolio">
-            <div class="portfolio-container" data-aos="fade-down" data-aos-duration="1000">
-                <h3 class="portfolio-header">Portfolio &mdash;</h3>
+            <div class="portfolio-container">
+                <h3 class="portfolio-header">Works &mdash;</h3>
                 <p>Here are a few designs I've worked on, feel free to <span><a href="#contact">ask me more!</a></span></p>
                 <div class="portfolio_projects">
                     
@@ -154,7 +154,7 @@
             
         <!-- ===== about me section starts ===== -->
         <section id="about">
-            <div class="about-container">
+            <div class="about-container" data-aos="fade-down" data-aos-duration="1000">
                 <h3 class="about_header_text">&mdash; About Me</h3>
                 <div class="about_me_container">
                     <div class="profile_img_container">
@@ -178,21 +178,23 @@
 
         <!-- ===== skills section starts ===== -->
         <section id="skills">
-            <div class="skill-container">
+            <div class="skill-container" data-aos="fade-left" data-aos-duration="1000">
                 <h3 class="skill_header_text">My Skills &mdash;</h3>
-                <div class="skills_container" data-aos="fade-left" data-aos-duration="1000">
+                <div class="skills_container">
                     
                     <div class="dev_skills_container">
                         <div class="dev_skills">
                             <h4 class="skills_header">FrontEnd Skills</h4>
                             <ul class="dev_skills_icons">
-                                <li><img class="dev_icon" src="images/icons8-html5.svg" alt="html icon"/></li>
-                                <li><img class="dev_icon" src="images/icons8-css3.svg" alt="css3 icon"/></li>
-                                <li><img class="dev_icon" src="images/icons8-javascript.svg" alt="javascript icon"/></li>
+                                <li><img class="dev_icon" src="images/icons8-html5 (1).svg" alt="html icon"/></li>
+                                <li><img class="dev_icon" src="images/icons8-css3 (1).svg" alt="css3 icon"/></li>
+                                <li><img class="dev_icon" src="images/icons8-javascript (1).svg" alt="javascript icon"/></li>
                                 <li><img class="dev_icon" src="images/icons8-react.svg" alt="reactjs icon"/></li>
                                 <li><img class="dev_icon" src="images/icons8-tailwindcss.svg" alt="tailwindcss icon"/></li>
                                 <li><img class="dev_icon" src="images/icons8-sass.svg" alt="sass icon"/></li>
-                                <li><img class="dev_icon" src="images/icons8-nextjs.svg" alt="nextjs icon"/></li>
+                                <li><img class="dev_icon" src="images/icons8-nextjs (1).svg" alt="nextjs icon"/></li>
+                                <li><img class="dev_icon" src="images/icons8-typescript-48.png" alt="typescript icon"/></li>
+                                <li><img class="dev_icon" src="images/react-native-1.svg" alt="reacct-native icon"/></li>
                             </ul>
                         </div>
                         
@@ -201,14 +203,15 @@
                             <h4 class="skills_header">Other Familiar Tools & Technologies </h4>
                             <ul class="other_skills_icons">
                                 <li><img class="skills_icon" src="images/icons8-git.svg" alt="git icon"/></li>
-                                <li><img class="skills_icon" src="images/icons8-postman.png" alt="postman icon"/></li>
-                                <li><img class="skills_icon" src="images/icons8-django.svg" alt="django icon"/></li>
-                                <li><img class="skills_icon" src="images/icons8-python.svg" alt="python icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-postman-48.png" alt="postman icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-nodejs.svg" alt="django icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-python(1).svg" alt="python icon"/></li>
                                 <li><img class="skills_icon" src="images/icons8-bootstrap.svg" alt="bootstrap icon"/></li>
-                                <li><img class="skills_icon" src="images/icons8-postgresql.svg" alt="postgresql icon"/></li>
-                                <li><img class="skills_icon" src="images/icons8-typescript-36.png" alt="typescript icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-mongodb.svg" alt="mongodb icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-express-js.svg" alt="expressjs icon"/></li>
                                 <li><img class="skills_icon" src="images/icons8-office-365.svg" alt="office365 icon"/></li>
-                                <li><img class="skills_icon" src="images/icons8-figma.svg" alt="figma icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-figma(1).svg" alt="figma icon"/></li>
+                                <li><img class="skills_icon" src="images/icons8-material-ui.svg" alt="materialUI icon"/></li>
                             </ul>
                         </div>
 
@@ -231,19 +234,40 @@
                             <div class="contact_icons" >
                                 <h4>Hit me up!</h4>
                                 <ul>
-                                    <div><img src="images/icons8-phone-100.png" alt="phone icon"/><a href="tel:+2349036454103">+2349036454103</a></div>
-                                    <div><img src="images/icons8-email-100.png" alt="email icon"/><a href="mailto:farayolajunior20@mail.com">farayolajunior20@gmail.com</a></div>
-                                    <div><img src="images/icons8-address-100.png" alt="location icon"/><a>FCT, Abuja. Nigeria.</a></div>
+                                    <div>
+                                        <img 
+                                            class="contact-icon" 
+                                            src="images/icons8-phone.svg" 
+                                            alt="phone icon"
+                                        />
+                                        <a href="tel:+2349036454103">+2349036454103</a>
+                                    </div>
+                                    <div>
+                                        <img 
+                                            class="contact-icon" 
+                                            src="images/icons8-email-64.png" 
+                                            alt="email icon"
+                                        />
+                                        <a href="mailto:farayolajunior20@mail.com">farayolajunior20@gmail.com</a>
+                                    </div>
+                                    <div>
+                                        <img 
+                                            class="contact-icon" 
+                                            src="images/icons8-address-50.png" 
+                                            alt="location icon"
+                                        />
+                                        <a>Abuja. Nigeria.</a>
+                                    </div>
                                 </ul>
                             </div>
                             <div class="social_icons">
                                 <h4>You can always find me here:&darr;</h4>
                                 <ul>
-                                    <li><a target="_blank" href="https://www.instagram.com/dayyyo.3"><img src="images/icons8-ig (1).svg" alt="instagram icon"/></a></li>
-                                    <li><a target="_blank" href="https://www.linkedin.com/in/abdulmuiz-farayola-8a8484224/"><img src="images/icons8-linkedin-img.png" alt="linkedin icon"/></a></li>
-                                    <li><a target="_blank" href="https://github.com/s8nclone"><img src="images/icons8-github (3).svg" alt="github icon"/></a></li>
-                                    <li><a target="_blank" href="https://twitter.com/middles8n"><img src="images/icons8-twitter-squared-100.png" alt="twitter icon"/></a></li>
-                                    <li><a target="_blank"><img src="images/icons8-behance.png" alt="behance icon"/></a></li>
+                                    <li><a target="_blank" href="https://www.instagram.com/dayyyo.3"><img src="images/icons8-instagram-50.png" alt="instagram icon"/></a></li>
+                                    <li><a target="_blank" href="https://www.linkedin.com/in/abdulmuiz-dayo-farayola-/"><img src="images/icons8-linkedin-50.png" alt="linkedin icon"/></a></li>
+                                    <li><a target="_blank" href="https://github.com/s8nclone"><img src="images/icons8-github (1).svg" alt="github icon"/></a></li>
+                                    <li><a target="_blank" href="https://twitter.com/middles8n"><img src="images/icons8-twitterx.svg" alt="twitter icon"/></a></li>
+                                    <li><a target="_blank" href="https://wa.me/2349036454103"><img src="images/icons8-whatsapp.svg" alt="behance icon"/></a></li>
                                 </ul>
                             </div>
                             

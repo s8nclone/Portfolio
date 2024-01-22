@@ -66,6 +66,20 @@ toggleButton.addEventListener('click', function(e) {
   }
 });
 
+// Define an array of strings
+const nameArray = ["'Muiz!", "Dayo!"];
+
+// Get the element with the class name "typing_span"
+const span = document.querySelector('.typing_span');
+
+let currentIndex = 0;
+
+//Set the text content of the span element to each string in the array, one after the other
+setInterval(() => {
+  span.textContent = nameArray[currentIndex % nameArray.length];
+  currentIndex++;
+}, 4000);
+
 
 // toggleButton.addEventListener('click', function() {
 //   body.classList.toggle('dark-mode');

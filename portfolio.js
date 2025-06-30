@@ -1,24 +1,24 @@
-emailjs.init('81LDfZBOKpsUfkY1Y');
-// emailjs.sendForm('contact_me', 'contact_form', this);
+// emailjs.init('81LDfZBOKpsUfkY1Y');
+// // emailjs.sendForm('contact_me', 'contact_form', this);
 
 window.onload = function() {
     AOS.init();
 
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        // generate a five digit number for the contact_number variable
-        this.contact_number.value = Math.random() * 100000 | 0;
-        // these IDs from the previous steps
-        emailjs.sendForm('contact_me', 'contact_form', this)
-            .then(function() {
-                console.log('SUCCESS!');
-                // clear input fields
-                document.getElementById('contact-form').reset();
-            }, function(error) {
-                console.log('FAILED...', error);
-            });
+    // document.getElementById('contact-form').addEventListener('submit', function(event) {
+    //     event.preventDefault();
+    //     // generate a five digit number for the contact_number variable
+    //     this.contact_number.value = Math.random() * 100000 | 0;
+    //     // these IDs from the previous steps
+    //     emailjs.sendForm('contact_me', 'contact_form', this)
+    //         .then(function() {
+    //             console.log('SUCCESS!');
+    //             // clear input fields
+    //             document.getElementById('contact-form').reset();
+    //         }, function(error) {
+    //             console.log('FAILED...', error);
+    //         });
         
-    });
+    // });
 }
 
 const hamburger = document.querySelector(".hamburger");
@@ -79,6 +79,12 @@ setInterval(() => {
   span.textContent = nameArray[currentIndex % nameArray.length];
   currentIndex++;
 }, 4000);
+
+// Get current year
+const newYear = new Date().getFullYear();
+
+const yearText = document.getElementById("currentYear");
+yearText.textContent = newYear;
 
 
 // toggleButton.addEventListener('click', function() {

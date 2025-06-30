@@ -744,6 +744,9 @@ html, body {
   max-width: 2rem;
   max-height: 2rem;
 }
+.contact-section .contact_footer_section .social_connect_container .social_connect_icons .contact_icons {
+  margin: 2rem 0;
+}
 .contact-section .contact_footer_section .social_connect_container .social_connect_icons .contact_icons ul {
   width: 100%;
   display: flex;
@@ -770,6 +773,7 @@ html, body {
 }
 .contact-section .contact_footer_section .social_connect_container .social_connect_icons .social_icons {
   padding: 5px;
+  margin: 2rem 0;
 }
 .contact-section .contact_footer_section .social_connect_container .social_connect_icons .social_icons ul {
   display: flex;
